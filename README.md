@@ -3,8 +3,8 @@
 Persönliche Wissensdatenbank für zuhause.
 
 Die Inhalte werden hauptsächlich als Markdown-Dateien gespeichert. Neue, noch
-unsortierte Informationen kommen zuerst in `00_Eingang`. Der zentrale Einstieg
-ist [START.md](START.md).
+unsortierte Informationen kommen zuerst in `00_Eingang`. Die zentrale
+Arbeitsanweisung für KI-Assistenten steht in [AGENTS.md](AGENTS.md).
 
 ## Bereiche
 
