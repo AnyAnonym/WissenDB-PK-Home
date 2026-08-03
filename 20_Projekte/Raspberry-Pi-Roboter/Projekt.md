@@ -28,9 +28,12 @@ Projekt gemeinsam mit einem Freund weiterentwickelt werden.
 - Caddy-Webserver ist installiert und funktioniert.
 - Tailscale ist installiert und funktioniert.
 - Der Raspberry Pi erscheint im Tailnet als Linux-Gerät mit dem Hostnamen
-  `kilian-raspberrypi-roboter`.
+  `kilian-raspberrypi-roboter` und der IP `100.103.171.34`.
+- In dem selben Tailscale Account befinden sich auch:
+  - pt-Lap21 (Laptop): `100.99.43.100`.
+  - t770h (Handy): `100.109.78.69`.
 - Die Webanwendung verwendet HTML, CSS und JavaScript im Frontend.
-- Das Backend wird mit JavaScript umgesetzt.
+- Das Backend wird mit JavaScript im Backend betrieben.
 
 ### Bluetooth und Audio
 
@@ -49,19 +52,4 @@ Projekt gemeinsam mit einem Freund weiterentwickelt werden.
 - [ ] Benötigte Sensoren, Aktoren und weitere Bauteile planen
 - [ ] Aufgaben für die spätere Zusammenarbeit mit dem Freund abstimmen
 
-## Sicherheits- und Datenschutzhinweis
 
-Die vollständigen Tailnet-IP-Adressen, die Kontokennung und Angaben zu anderen
-Geräten aus dem Tailscale-Screenshot werden nicht in der Wissensdatenbank
-gespeichert.
-
-## Zugehörige Dateien
-
-- Der bereitgestellte Tailscale-Screenshot wurde ausgewertet, aber wegen seines
-  temporären Speicherorts und der enthaltenen privaten Angaben nicht in das
-  Repository übernommen.
-
-## Quellen
-
-- Eigene Angaben und aktueller Projektstand vom 2026-08-03
-- Bereitgestellter Screenshot der Ausgabe von `tailscale status`
