@@ -2,7 +2,8 @@
 
 ## In Arbeit
 
-Noch keine Projekte.
+- [Raspberry-Pi-Roboter](Raspberry-Pi-Roboter/Projekt.md) – Grundfunktionen und
+  Infrastruktur laufen; als Nächstes wird die nächste Roboterfunktion geplant.
 
 ## Geplant
 
