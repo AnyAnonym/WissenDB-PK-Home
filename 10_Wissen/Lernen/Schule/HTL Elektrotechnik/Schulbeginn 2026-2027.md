@@ -29,4 +29,5 @@ Der vorliegende Ausschnitt nennt für Montag, den 14. September 2026, drei Progr
 - Bereich: Lernen / Schule / HTL Elektrotechnik
 - Termin: 2026-09-14
 - Erfasst: 2026-08-04
+- Zuletzt geändert: 2026-08-04
 - Status: bevorstehend; persönliche Relevanz teilweise offen

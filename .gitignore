@@ -1,0 +1,28 @@
+# Betriebssystem und Editoren
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+~$*
+
+# Lokale Konfiguration und Zugangsdaten
+.env
+.env.*
+!.env.example
+*.local
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Temporäre Dateien und Werkzeug-Caches
+*.tmp
+*.temp
+*.bak
+/tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

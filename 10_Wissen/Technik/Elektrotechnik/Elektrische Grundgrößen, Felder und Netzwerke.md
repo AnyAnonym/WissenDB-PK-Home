@@ -49,5 +49,6 @@ Vorzeichenregeln und Arbeitsschritte sind oben vollständig zusammengeführt.
 
 - Bereich: Technik / Elektrotechnik
 - Erstellt: 2026-08-04
+- Zuletzt geändert: 2026-08-04
 - Überprüft: 2026-08-04
 - Status: aktuell

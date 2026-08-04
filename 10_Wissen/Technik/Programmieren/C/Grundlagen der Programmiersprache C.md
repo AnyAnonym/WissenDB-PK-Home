@@ -49,5 +49,6 @@ Die Stundentafel ordnet C dem technischen Pflichtgegenstand „Fachspezifische I
 
 - Bereich: Technik / Programmieren / C
 - Erstellt: 2026-08-04
+- Zuletzt geändert: 2026-08-04
 - Überprüft: 2026-08-04
 - Status: aktuell

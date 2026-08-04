@@ -24,6 +24,7 @@ Benutzer keine andere Sprache verlangt.
 - `50_Dokumentation`: Geräte, Verträge und eigene technische Systeme
 - `60_Quellen`: Bücher, Internetseiten, Schulmaterial und sonstige Quellen
 - `70_Vorlagen`: Vorlagen für neue Einträge
+- `80_Workflows`: festgelegte Abläufe für wiederkehrende KI-Aufträge
 - `90_Archiv`: unveränderte Originaldateien und interne Protokolle abgeschlossener
   Importläufe; kein regulärer Wissens- oder Quellenbereich
 
@@ -41,8 +42,7 @@ die Originaldatei und ohne Kenntnis des ursprünglichen Chats ausreichen.
 Während eines Importlaufs darf der Assistent einen neuen Archivlauf anlegen, die
 erfolgreich verarbeiteten Originale einmalig dorthin verschieben, ihre Integrität
 prüfen und das Importprotokoll schreiben. Nach Abschluss des Laufs wird dieser
-Archivbereich nicht mehr gelesen, durchsucht, verändert oder als Quelle für
-laufende Arbeit verwendet.
+Archivbereich nicht mehr als Wissensgrundlage für laufende Arbeit verwendet.
 
 Ein Zugriff auf einen abgeschlossenen Archivlauf ist nur zulässig, wenn der
 Benutzer ihn ausdrücklich verlangt oder wenn verlorenes beziehungsweise
@@ -50,6 +50,14 @@ beschädigtes Wissen anders nicht wiederhergestellt werden kann. In diesem Fall
 muss die betroffene Arbeitsnotiz den Satz „Archiv nur im Notfall herangezogen“
 sowie Grund und Datum des Zugriffs enthalten. Ein bloß nützlicher Zusatz, eine
 bequemere Recherche oder eine unvollständige Wissensnotiz ist kein Notfall.
+
+Eine fest begrenzte Ausnahme ist der Workflow `Gib mir alle Quellen von
+<Thema>` aus `80_Workflows/quellen-anzeigen.md`. Dabei dürfen Importprotokolle
+durchsucht und archivierte Originaldateien als Quellen aufgelistet werden. Ihre
+Inhalte dürfen in diesem Workflow nicht als Wissensersatz ausgewertet werden.
+Diese Quellenauflistung ist kein Notfallzugriff und wird nicht als solcher
+dokumentiert. Sie ändert nichts daran, dass aktive Einträge ohne Archivzugriff
+vollständig verständlich und praktisch nutzbar sein müssen.
 
 KI-Assistenten dürfen die thematische Ordnerstruktur eigenständig festlegen und
 verbessern. Dazu gehört, für das betroffene Wissen Ordner und Dateien anzulegen,
@@ -61,72 +69,29 @@ Umstrukturierung müssen betroffene interne Verweise aktualisiert und die
 Strukturänderungen im Importprotokoll festgehalten werden. Sachfremde Bereiche
 bleiben unangetastet.
 
-## Standardworkflow: neues Wissen eintragen
+## Workflow-Auswahl
 
-Wenn der Benutzer sinngemäß sagt, dass das neue Wissen aus `00_Eingang`
-eingetragen oder verarbeitet werden soll, gilt dies als Auftrag für einen
-vollständigen Importlauf. Das bloße Ablegen von Dateien löst noch keine
-Verarbeitung aus.
+Die verbindliche Übersicht steht in
+[80_Workflows/README.md](80_Workflows/README.md). Bei einem passenden
+Benutzerauftrag wird die zugehörige Workflow-Datei vollständig gelesen und
+ausgeführt:
 
-1. Prüfe den Git-Status und erfasse alle regulären Dateien in `00_Eingang`, auch
-   in Unterordnern. Bereits vorhandene Änderungen außerhalb des Importauftrags
-   bleiben unangetastet.
-2. Lege zu Beginn des Laufs einen lokalen Zeitstempel im Format
-   `JJJJ-MM-TT_HHMMSS` (Zeitzone des Benutzers) fest. Der zugehörige Archivpfad
-   lautet `90_Archiv/Importe/<Zeitstempel>/`.
-3. Lies jede unterstützte Datei vollständig und erstelle für jede Datei eine
-   ausführliche Einzelbeschreibung. Sie muss alle für die spätere Nutzung
-   wesentlichen Aussagen, Daten, Voraussetzungen, Abläufe, Entscheidungen,
-   Einschränkungen und offenen Fragen enthalten. Trenne Tatsachen, Vermutungen,
-   offene Fragen und zeitabhängige Angaben. Beachte bei Formeln und
-   Rechenbeispielen die unten festgelegten Sonderregeln.
-4. Vergleiche die gewonnenen Informationen mit dem gesamten relevanten Bestand.
-   Wähle oder verbessere dabei selbstständig eine passende, menschlich
-   nachvollziehbare Ordnerstruktur. Aktualisiere passende Einträge, statt
-   parallele Dubletten anzulegen. Erstelle nur dann einen neuen Eintrag, wenn noch
-   kein sinnvoller Zielartikel existiert, und verwende dafür möglichst eine
-   Vorlage aus `70_Vorlagen`.
-5. Führe ergänzende Informationen sachlich zusammen. Entferne keine weiterhin
-   gültigen Aussagen oder früheren Projektfortschritte. Bei Widersprüchen darf
-   keine Variante still überschrieben werden: dokumentiere beide Angaben mit
-   Quelle und Datum oder kennzeichne die Klärung als offene Frage.
-6. Übernimm das nutzbare Wissen vollständig in die aktiven Einträge. Verweise
-   weder auf den Eingangspfad noch auf den späteren Archivpfad. Der ursprüngliche
-   Dateiname darf zur Herkunft genannt werden, aber nicht als notwendige
-   Lesestelle. Wenn ein Eintrag ohne die Originaldatei unverständlich oder
-   unvollständig wäre, muss seine Beschreibung vor der Archivierung verbessert
-   werden.
-7. Erstelle im Laufordner eine Datei `IMPORTPROTOKOLL.md`. Sie ist interne
-   Archivmetadokumentation und wird nicht aus aktiven Bereichen verlinkt. Sie
-   enthält den Zeitstempel, eine Liste aller erfassten Dateien und je Datei
-   mindestens: Bearbeitungsstatus, ausführliche Einzelbeschreibung, Zielpfad oder
-   Merge-Ziel sowie Hinweise auf Dubletten, Konflikte oder offene Fragen.
-8. Prüfe vor dem Verschieben, dass Einzelbeschreibungen, Merge-Ergebnisse und
-   Protokoll vollständig sind und jeder aktive Eintrag ohne Originaldatei
-   verständlich und nutzbar ist. Prüfe außerdem, dass außerhalb des neuen
-   Archivlaufs kein Archivpfad eingetragen wurde. Verschiebe anschließend nur
-   erfolgreich verarbeitete Originaldateien unverändert und unter Beibehaltung
-   ihrer relativen Eingangsstruktur nach
-   `90_Archiv/Importe/<Zeitstempel>/Originale/`.
-9. Nicht lesbare, nicht unterstützte oder fehlerhaft verarbeitete Dateien bleiben
-   in `00_Eingang`. Vermerke den Grund im Importprotokoll und nenne ihn dem
-   Benutzer. Lösche keine Eingangsdatei.
-10. Berichte abschließend knapp, welche Dateien verarbeitet und welche
-    Wissenseinträge neu erstellt oder aktualisiert wurden sowie was
-    gegebenenfalls noch im Eingang wartet. Melde, dass die Originale archiviert
-    wurden, ohne den Archivpfad als weiterführende Quelle oder Link anzubieten.
+- `Wissen eintragen` → `80_Workflows/wissen-eintragen.md`
+- `Was weiß ich über <Thema>?` → `80_Workflows/wissen-abfragen.md`
+- `Gib mir alle Quellen von <Thema>` → `80_Workflows/quellen-anzeigen.md`
+- `Prüfe die Wissensdatenbank` → `80_Workflows/wissensdatenbank-pruefen.md`
 
-Der Importauftrag erlaubt ausdrücklich das Aktualisieren und sinnvolle
-Umstrukturieren der betroffenen Wissenseinträge sowie das Verschieben erfolgreich
-verarbeiteter Eingangsdateien ins oben definierte Archiv. Er erlaubt weder das
-Löschen von Originalen noch Änderungen an sachfremden Dateien. Archivierte
-Originale sind unveränderlich und werden nach Abschluss nicht regulär verwendet;
-spätere Korrekturen erfolgen in den selbstständigen Wissenseinträgen und werden
-nachvollziehbar dokumentiert.
+Eindeutig sinngleiche Formulierungen gelten ebenfalls. Eine Quellenabfrage hat
+Vorrang vor einer allgemeinen Wissensabfrage. Das bloße Ablegen von Dateien löst
+keinen Workflow aus. Bei einer unklaren Zuordnung fragt der Assistent nach, bevor
+er einen schreibenden Workflow startet.
 
 ## Verhalten beim Ablegen von Wissen
 
 - Verwende für neue Einträge möglichst eine passende Vorlage aus `70_Vorlagen`.
+- Jeder neue Wissenseintrag erhält `Erstellt` und `Zuletzt geändert`. Bei einer
+  inhaltlichen Änderung wird nur `Zuletzt geändert` auf das aktuelle lokale Datum
+  gesetzt; reine Lesezugriffe ändern das Datum nicht.
 - Behandle `00_Eingang` als Warteschlange für noch nicht verarbeitete Dateien,
   nicht als dauerhaften Speicherort.
 - Formuliere sachlich, verständlich und so vollständig, dass der Inhalt später

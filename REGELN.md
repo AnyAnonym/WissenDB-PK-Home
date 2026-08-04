@@ -4,9 +4,9 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 
 1. Neue Dateien, deren Wissen übernommen werden soll, kommen in `00_Eingang`.
    Dieser Ordner ist eine Warteschlange und kein dauerhafter Ablageort.
-2. Das Ablegen allein startet keine Verarbeitung. Die Aufforderung „neues Wissen
-   eintragen“ oder eine sinngleiche Formulierung startet einen vollständigen
-   Importlauf nach `AGENTS.md`.
+2. Das Ablegen allein startet keine Verarbeitung. Die Aufforderung `Wissen
+   eintragen` oder eine sinngleiche Formulierung startet den vollständigen Ablauf
+   nach `80_Workflows/wissen-eintragen.md`.
 3. Jede Eingangsdatei wird vollständig gelesen, ausführlich beschrieben und
    anschließend mit dem relevanten vorhandenen Wissen verglichen. Die
    Beschreibung muss für den normalen Gebrauch ohne Originaldatei ausreichen.
@@ -33,10 +33,10 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 9. Erfolgreich verarbeitete Originaldateien werden unverändert unter
    `90_Archiv/Importe/JJJJ-MM-TT_HHMMSS/Originale/` archiviert. Ihre relative
    Struktur aus dem Eingang bleibt erhalten.
-10. Das Archiv dient nur der unveränderten Aufbewahrung. Nach Abschluss eines
-    Importlaufs wird es nicht regulär gelesen, durchsucht, verändert oder aus
-    aktiven Bereichen verlinkt. Zulässig bleiben nur die einmalige Ablage und
-    Integritätsprüfung während des laufenden Imports.
+10. Das Archiv dient nur der unveränderten Aufbewahrung und nicht als Ersatz für
+    aktive Wissenseinträge. Der Workflow `Gib mir alle Quellen von <Thema>` darf
+    Importprotokolle durchsuchen und archivierte Originaldateien ausschließlich
+    als Quellen auflisten. Er wertet ihren Inhalt nicht als Wissensersatz aus.
 11. Jeder Importlauf erhält unter seinem Zeitstempel eine Datei
     `IMPORTPROTOKOLL.md` mit ausführlichen Einzelbeschreibungen,
     Bearbeitungsstatus, Merge-Zielen, Konflikten und offenen Fragen. Das Protokoll
@@ -48,10 +48,11 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
     im Eingang und der Benutzer erhält einen Hinweis.
 13. Archivierte Originale werden nicht verändert oder gelöscht. Bestehende Inhalte
     werden ebenfalls nicht ohne ausdrücklichen Auftrag gelöscht.
-14. Ein Zugriff auf einen abgeschlossenen Archivlauf ist nur auf ausdrücklichen
-    Benutzerwunsch oder zur Wiederherstellung verlorenen beziehungsweise
-    beschädigten Wissens erlaubt. Die betroffene Notiz muss dann „Archiv nur im
-    Notfall herangezogen“, Grund und Datum enthalten.
+14. Ein sonstiger Zugriff auf einen abgeschlossenen Archivlauf ist nur auf
+    ausdrücklichen Benutzerwunsch oder zur Wiederherstellung verlorenen
+    beziehungsweise beschädigten Wissens erlaubt. Die betroffene Notiz muss dann
+    „Archiv nur im Notfall herangezogen“, Grund und Datum enthalten. Die reine
+    Quellenauflistung nach Regel 10 ist kein Notfallzugriff.
 15. Der KI-Assistent darf die thematische Ordnerstruktur eigenständig wählen und
     verbessern. Er darf dazu betroffene Ordner und Dateien anlegen, umbenennen,
     verschieben oder sinnvoll zusammenführen. Die Hierarchie und ihre Namen müssen
@@ -65,5 +66,14 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 19. Passwörter, Zugangsdaten und andere Geheimnisse werden weder in Wissen noch
     Archiv übernommen. Verdächtige Dateien bleiben ungeändert im Eingang und
     werden dem Benutzer gemeldet.
-20. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
+20. Neue Wissenseinträge enthalten `Erstellt` und `Zuletzt geändert`. Bei jeder
+    inhaltlichen Änderung wird `Zuletzt geändert` auf das aktuelle lokale Datum
+    gesetzt; ein reiner Lesezugriff ändert es nicht.
+21. `Was weiß ich über <Thema>?` verwendet ausschließlich den aktiven lokalen
+    Wissensbestand, weder Internet noch Eingang oder Archiv, und verändert nichts.
+22. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,
+    Dubletten und sensible Angaben nach
+    `80_Workflows/wissensdatenbank-pruefen.md` und ist ohne zusätzlichen
+    Änderungsauftrag rein lesend.
+23. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
     Deutsch sein.

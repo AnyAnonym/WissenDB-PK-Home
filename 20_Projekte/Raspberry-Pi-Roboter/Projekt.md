@@ -4,6 +4,7 @@
 
 - Status: In Arbeit
 - Begonnen: unbekannt
+- Zuletzt geändert: 2026-08-04
 - Zieltermin: noch offen
 - Nächster Schritt: Nächste gewünschte Roboterfunktion festlegen und die dafür benötigte Hardware planen
 - Zusammenarbeit: Ein Freund wird zu einem späteren Zeitpunkt dazustoßen
@@ -27,11 +28,9 @@ Projekt gemeinsam mit einem Freund weiterentwickelt werden.
 
 - Caddy-Webserver ist installiert und funktioniert.
 - Tailscale ist installiert und funktioniert.
-- Der Raspberry Pi erscheint im Tailnet als Linux-Gerät mit dem Hostnamen
-  `kilian-raspberrypi-roboter` und der IP `100.103.171.34`.
-- In dem selben Tailscale Account befinden sich auch:
-  - pt-Lap21 (Laptop): `100.99.43.100`.
-  - t770h (Handy): `100.109.78.69`.
+- Der Raspberry Pi ist als Linux-Gerät über Tailscale erreichbar.
+- Private Tailnet-IP-Adressen, Kontokennungen und Namen anderer Geräte werden
+  nicht in der Wissensdatenbank gespeichert.
 - Die Webanwendung verwendet HTML, CSS und JavaScript im Frontend.
 - Das Backend wird mit JavaScript im Backend betrieben.
 
@@ -51,5 +50,4 @@ Projekt gemeinsam mit einem Freund weiterentwickelt werden.
 - [ ] Nächste gewünschte Roboterfunktion festlegen
 - [ ] Benötigte Sensoren, Aktoren und weitere Bauteile planen
 - [ ] Aufgaben für die spätere Zusammenarbeit mit dem Freund abstimmen
-
 

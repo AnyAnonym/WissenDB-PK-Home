@@ -1,5 +1,11 @@
 # Titel
 
+## Metadaten
+
+- Bereich:
+- Erstellt: JJJJ-MM-TT
+- Zuletzt geändert: JJJJ-MM-TT
+
 ## Kurzfassung
 
 Kurze Zusammenfassung des Wissens.
@@ -18,10 +24,3 @@ Originaldatei und ohne Archivzugriff verständlich und praktisch nutzbar sein.
 ## Quellen
 
 - Keine oder verlässliche öffentliche beziehungsweise bibliografische Quellen
-
-## Metadaten
-
-- Bereich:
-- Erstellt: JJJJ-MM-TT
-- Überprüft: JJJJ-MM-TT
-- Status: aktuell

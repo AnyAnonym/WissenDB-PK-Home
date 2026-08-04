@@ -73,5 +73,6 @@ Für das fünfte Jahr nennt die Lehrinhaltsübersicht die Planung, Konstruktion 
 
 - Bereich: Lernen / Schule / HTL Elektrotechnik
 - Erfasst: 2026-08-04
+- Zuletzt geändert: 2026-08-04
 - Gültigkeitszeitraum der Stundentafel: in der Quelle nicht angegeben
 - Status: aktuell, zeitliche Gültigkeit offen

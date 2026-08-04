@@ -7,6 +7,7 @@
 - Datum: Stundentafel undatiert; Ablauf betrifft den 14.09.2026
 - Ursprüngliche Dateinamen: `HTL_Elektrotechnik-Stundentafel.pdf` und `Ablauf-ersterSchultag202627.png`
 - Erfasst am: 2026-08-04
+- Zuletzt geändert: 2026-08-04
 
 ## Kurzbeschreibung
 

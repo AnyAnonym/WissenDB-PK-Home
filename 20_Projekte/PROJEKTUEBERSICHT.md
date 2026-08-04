@@ -1,5 +1,7 @@
 # Projektübersicht
 
+- Zuletzt geändert: 2026-08-04
+
 ## In Arbeit
 
 - [Raspberry-Pi-Roboter](Raspberry-Pi-Roboter/Projekt.md) – Grundfunktionen und
