@@ -48,15 +48,6 @@ Ordner benötigt wird.
 └── 3.8 Wärmeausdehnung und Gasgesetze
 ```
 
-## Derzeit nicht belegte Kapitel
-
-- Kapitel `1` ist in den aktuell verarbeiteten Unterlagen nicht beschrieben.
-- Kapitel `4` und damit auch ein möglicher Unterpunkt `4.1` sind derzeit nicht
-  belegt.
-- Fehlende Nummern werden nicht erfunden. Sobald eine verlässliche schulische
-  Quelle oder Angabe vorliegt, wird diese Übersicht ergänzt und die passende
-  Datei angelegt.
-
 ## Strukturregel
 
 Sammelkapitel mit mehreren Artikeln dürfen einen eigenen Ordner besitzen.
