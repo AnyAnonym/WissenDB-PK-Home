@@ -39,5 +39,7 @@ Formelsammlung.
 
 ## Abgeleitete Einträge
 
-Die Inhalte wurden in thematische Artikel unter `10_Wissen/Lernen/Mathematik`
-und in eine historische Prüfungsübersicht zusammengeführt.
+Die dauerhaft relevanten Inhalte wurden in thematische Artikel unter
+`10_Wissen/Lernen/Mathematik` zusammengeführt. Die historischen Prüfungsthemen
+bleiben als Bestandteil des Quellenumfangs dokumentiert, werden jedoch nicht als
+eigener Wissenseintrag geführt.

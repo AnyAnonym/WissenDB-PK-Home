@@ -66,9 +66,12 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 19. Passwörter, Zugangsdaten und andere Geheimnisse werden weder in Wissen noch
     Archiv übernommen. Verdächtige Dateien bleiben ungeändert im Eingang und
     werden dem Benutzer gemeldet.
-20. Neue Wissenseinträge enthalten `Erstellt` und `Zuletzt geändert`. Bei jeder
-    inhaltlichen Änderung wird `Zuletzt geändert` auf das aktuelle lokale Datum
-    gesetzt; ein reiner Lesezugriff ändert es nicht.
+20. Neue Wissenseinträge enthalten `Erstellt` und `Zuletzt geändert`. Für
+    `Erstellt` wird automatisch das lokale Datum der erstmaligen Aufnahme in die
+    Wissensdatenbank verwendet; der Benutzer muss es nicht angeben. Bei jeder
+    inhaltlichen Änderung wird nur `Zuletzt geändert` auf das aktuelle lokale
+    Datum gesetzt. `Erstellt` bleibt unverändert; ein reiner Lesezugriff ändert
+    keines der beiden Daten.
 21. `Was weiß ich über <Thema>?` verwendet ausschließlich den aktiven lokalen
     Wissensbestand, weder Internet noch Eingang oder Archiv, und verändert nichts.
 22. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,

@@ -5,6 +5,11 @@ Unterstütze den Benutzer dabei, Wissen verständlich abzulegen, wiederzufinden,
 zu ordnen und aktuell zu halten. Antworte grundsätzlich auf Deutsch, sofern der
 Benutzer keine andere Sprache verlangt.
 
+## Metadaten
+
+- Erstellt: 2026-08-03
+- Zuletzt geändert: 2026-08-04
+
 ## Vorgehen zu Beginn jeder Sitzung
 
 1. Lies diese Datei vollständig.
@@ -89,9 +94,12 @@ er einen schreibenden Workflow startet.
 ## Verhalten beim Ablegen von Wissen
 
 - Verwende für neue Einträge möglichst eine passende Vorlage aus `70_Vorlagen`.
-- Jeder neue Wissenseintrag erhält `Erstellt` und `Zuletzt geändert`. Bei einer
-  inhaltlichen Änderung wird nur `Zuletzt geändert` auf das aktuelle lokale Datum
-  gesetzt; reine Lesezugriffe ändern das Datum nicht.
+- Jeder neue Wissenseintrag erhält `Erstellt` und `Zuletzt geändert`. Als
+  `Erstellt` wird automatisch das lokale Datum verwendet, an dem der Eintrag
+  erstmals in die Wissensdatenbank aufgenommen wird; der Benutzer muss dieses
+  Datum nicht angeben. Bei einer inhaltlichen Änderung wird nur
+  `Zuletzt geändert` auf das aktuelle lokale Datum gesetzt. `Erstellt` bleibt
+  unverändert; reine Lesezugriffe ändern keines der beiden Daten.
 - Behandle `00_Eingang` als Warteschlange für noch nicht verarbeitete Dateien,
   nicht als dauerhaften Speicherort.
 - Formuliere sachlich, verständlich und so vollständig, dass der Inhalt später
