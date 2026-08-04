@@ -1,0 +1,38 @@
+# Wärmemenge und spezifische Wärmekapazität
+
+## Grundzusammenhang
+
+Wird ein Stoff ohne Phasenwechsel erwärmt oder abgekühlt, gilt
+
+$$Q=mc\,\Delta T.$$
+
+$m$ ist die Masse, $c$ die spezifische Wärmekapazität und $\Delta T$ die Temperaturänderung. Die Wärmekapazität eines konkreten Körpers ist $C=mc$ und damit $Q=C\Delta T$.
+
+Eine hohe spezifische Wärmekapazität bedeutet, dass für dieselbe Masse und Temperaturänderung viel Energie übertragen werden muss. Wasser kann deshalb große Energiemengen aufnehmen, ohne dass sich seine Temperatur extrem verändert.
+
+## Vorzeichen und Energiebilanz
+
+Je nach Konvention ist $Q$ beim Aufnehmen von Energie positiv und beim Abgeben negativ. In einfachen Aufgaben reicht oft die Aussage „abgegebene Wärmemenge = aufgenommene Wärmemenge“. Wichtig ist, die Vorzeichen konsequent zu verwenden.
+
+## Leistung und Wirkungsgrad beim Erwärmen
+
+Bei einer Heizung mit Leistung $P$ ist die zugeführte Energie $E=P t$. Nur der Anteil $\eta Pt$ wird bei einem Wirkungsgrad $\eta$ als Nutzwärme wirksam. Daraus kann die Heizdauer bestimmt werden.
+
+## Gase
+
+Bei Gasen wird zwischen Wärmekapazität bei konstantem Druck $c_p$ und bei konstantem Volumen $c_v$ unterschieden, weil ein Gas bei Expansion zusätzlich Arbeit verrichten kann.
+
+## Typische Fehler
+
+- Die Formel trotz Schmelzen oder Verdampfen über den gesamten Vorgang verwenden.
+- Masseeinheiten und Einheit von $c$ nicht aufeinander abstimmen.
+- End- und Anfangstemperatur in falscher Reihenfolge subtrahieren.
+- Wärmeverluste oder Wirkungsgrad doppelt berücksichtigen.
+
+## Herkunft des Wiederaufbaus
+
+- Archiv nur im Notfall herangezogen.
+- Grund: Auf ausdrücklichen Wunsch wurden Theorie und passende Rechenanwendungen aus den archivierten Schulunterlagen zusammengeführt.
+- Auswertung am: 2026-08-04
+- Ausgewertete Dateinamen: `Thermodynamik.pdf`, `Physik Beispiele 5.docx`
+

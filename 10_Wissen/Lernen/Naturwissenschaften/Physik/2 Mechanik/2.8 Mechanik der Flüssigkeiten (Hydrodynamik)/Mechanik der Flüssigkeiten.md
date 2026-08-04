@@ -1,0 +1,49 @@
+# Mechanik der Flüssigkeiten
+
+## Druck in ruhenden Flüssigkeiten
+
+Druck ist Kraft pro Fläche: $p=F/A$. In einer ruhenden Flüssigkeit steigt der hydrostatische Druck mit Tiefe, Dichte und Fallbeschleunigung:
+
+$$p_h=\rho gh.$$
+
+Der absolute Druck enthält zusätzlich den Druck an der Oberfläche. Ein U-Rohr-Manometer bestimmt Druckdifferenzen über unterschiedliche Flüssigkeitshöhen.
+
+## Auftrieb
+
+Nach dem archimedischen Prinzip entspricht die Auftriebskraft dem Gewicht der verdrängten Flüssigkeit:
+
+$$F_A=\rho_\mathrm{Fl}\,g\,V_\mathrm{verdrängt}.$$
+
+Ein Körper sinkt, schwebt oder steigt abhängig vom Vergleich zwischen Gewicht und Auftrieb. Ein schwimmender Körper verdrängt so viel Flüssigkeit, dass deren Gewicht seinem eigenen Gewicht entspricht.
+
+## Strömung
+
+Für eine stationäre, inkompressible Strömung gilt die Kontinuitätsgleichung
+
+$$\dot V=Av=\text{konstant}.$$
+
+Wird ein Rohr enger, steigt die Strömungsgeschwindigkeit. Entlang einer Stromlinie gilt im idealisierten Fall die Bernoulli-Gleichung
+
+$$p+\rho gh+\frac12\rho v^2=\text{konstant}.$$
+
+Sie verbindet statischen Druck, Lageanteil und Bewegungsanteil der Flüssigkeit.
+
+## Voraussetzungen und Grenzen
+
+Die einfachen Beziehungen setzen je nach Anwendung eine gleichmäßige Dichte, stationäre Strömung und geringe Reibungsverluste voraus. Reale Flüssigkeiten besitzen Viskosität; Gase sind deutlich kompressibel. Pumpen, Turbulenzen und Reibung erfordern zusätzliche Energie- oder Verlustterme.
+
+## Lösungsstrategie
+
+1. Zwischen absolutem Druck und Druckdifferenz unterscheiden.
+2. Bezugshöhen und Querschnitte markieren.
+3. Bei Auftrieb das tatsächlich verdrängte Volumen verwenden.
+4. Kontinuität zuerst, Bernoulli anschließend anwenden.
+5. Prüfen, ob die Voraussetzungen des idealen Modells erfüllt sind.
+
+## Herkunft des Wiederaufbaus
+
+- Archiv nur im Notfall herangezogen.
+- Grund: Auf ausdrücklichen Wunsch wurden Theorie und Rechenanwendungen aus den archivierten Schulunterlagen zu einem vollständigen Lerntext verbunden.
+- Auswertung am: 2026-08-04
+- Ausgewertete Dateinamen: `Kapitel 2.6 - 2.8.pdf`, `Physik Beispiele 4.docx`
+

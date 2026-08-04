@@ -24,11 +24,32 @@ Benutzer keine andere Sprache verlangt.
 - `50_Dokumentation`: Geräte, Verträge und eigene technische Systeme
 - `60_Quellen`: Bücher, Internetseiten, Schulmaterial und sonstige Quellen
 - `70_Vorlagen`: Vorlagen für neue Einträge
-- `90_Archiv`: nicht mehr aktive Inhalte und unveränderte Originaldateien aus
-  abgeschlossenen Importläufen
+- `90_Archiv`: unveränderte Originaldateien und interne Protokolle abgeschlossener
+  Importläufe; kein regulärer Wissens- oder Quellenbereich
 
 Die Projektübersicht befindet sich in
 [20_Projekte/PROJEKTUEBERSICHT.md](20_Projekte/PROJEKTUEBERSICHT.md).
+
+## Archivprinzip und selbstständige Wissenseinträge
+
+Das Archiv dient ausschließlich der unveränderten, langfristigen Aufbewahrung.
+Aktive Wissenseinträge, Projekte, Anleitungen, Dokumentationen und Quellenlisten
+dürfen nicht auf Dateien oder Pfade in `90_Archiv` verweisen. Sie müssen so
+vollständig und verständlich sein, dass sie im normalen Gebrauch ohne Zugriff auf
+die Originaldatei und ohne Kenntnis des ursprünglichen Chats ausreichen.
+
+Während eines Importlaufs darf der Assistent einen neuen Archivlauf anlegen, die
+erfolgreich verarbeiteten Originale einmalig dorthin verschieben, ihre Integrität
+prüfen und das Importprotokoll schreiben. Nach Abschluss des Laufs wird dieser
+Archivbereich nicht mehr gelesen, durchsucht, verändert oder als Quelle für
+laufende Arbeit verwendet.
+
+Ein Zugriff auf einen abgeschlossenen Archivlauf ist nur zulässig, wenn der
+Benutzer ihn ausdrücklich verlangt oder wenn verlorenes beziehungsweise
+beschädigtes Wissen anders nicht wiederhergestellt werden kann. In diesem Fall
+muss die betroffene Arbeitsnotiz den Satz „Archiv nur im Notfall herangezogen“
+sowie Grund und Datum des Zugriffs enthalten. Ein bloß nützlicher Zusatz, eine
+bequemere Recherche oder eine unvollständige Wissensnotiz ist kein Notfall.
 
 KI-Assistenten dürfen die thematische Ordnerstruktur eigenständig festlegen und
 verbessern. Dazu gehört, für das betroffene Wissen Ordner und Dateien anzulegen,
@@ -54,8 +75,11 @@ Verarbeitung aus.
    `JJJJ-MM-TT_HHMMSS` (Zeitzone des Benutzers) fest. Der zugehörige Archivpfad
    lautet `90_Archiv/Importe/<Zeitstempel>/`.
 3. Lies jede unterstützte Datei vollständig und erstelle für jede Datei eine
-   verständliche Einzelzusammenfassung. Trenne Tatsachen, Vermutungen, offene
-   Fragen und zeitabhängige Angaben.
+   ausführliche Einzelbeschreibung. Sie muss alle für die spätere Nutzung
+   wesentlichen Aussagen, Daten, Voraussetzungen, Abläufe, Entscheidungen,
+   Einschränkungen und offenen Fragen enthalten. Trenne Tatsachen, Vermutungen,
+   offene Fragen und zeitabhängige Angaben. Beachte bei Formeln und
+   Rechenbeispielen die unten festgelegten Sonderregeln.
 4. Vergleiche die gewonnenen Informationen mit dem gesamten relevanten Bestand.
    Wähle oder verbessere dabei selbstständig eine passende, menschlich
    nachvollziehbare Ordnerstruktur. Aktualisiere passende Einträge, statt
@@ -66,48 +90,84 @@ Verarbeitung aus.
    gültigen Aussagen oder früheren Projektfortschritte. Bei Widersprüchen darf
    keine Variante still überschrieben werden: dokumentiere beide Angaben mit
    Quelle und Datum oder kennzeichne die Klärung als offene Frage.
-6. Verweise in den Wissenseinträgen auf die endgültigen Archivpfade der
-   Originalquellen. Der Eingangspfad darf nach dem Verschieben nicht als Quelle
-   zurückbleiben.
-7. Erstelle im Laufordner eine Datei `IMPORTPROTOKOLL.md`. Sie enthält den
-   Zeitstempel, eine Liste aller erfassten Dateien und je Datei mindestens:
-   Bearbeitungsstatus, Einzelzusammenfassung, Zielpfad oder Merge-Ziel sowie
-   Hinweise auf Dubletten, Konflikte oder offene Fragen.
-8. Prüfe vor dem Verschieben, dass Zusammenfassungen, Merge-Ergebnisse,
-   Quellverweise und Protokoll vollständig sind. Verschiebe anschließend nur
+6. Übernimm das nutzbare Wissen vollständig in die aktiven Einträge. Verweise
+   weder auf den Eingangspfad noch auf den späteren Archivpfad. Der ursprüngliche
+   Dateiname darf zur Herkunft genannt werden, aber nicht als notwendige
+   Lesestelle. Wenn ein Eintrag ohne die Originaldatei unverständlich oder
+   unvollständig wäre, muss seine Beschreibung vor der Archivierung verbessert
+   werden.
+7. Erstelle im Laufordner eine Datei `IMPORTPROTOKOLL.md`. Sie ist interne
+   Archivmetadokumentation und wird nicht aus aktiven Bereichen verlinkt. Sie
+   enthält den Zeitstempel, eine Liste aller erfassten Dateien und je Datei
+   mindestens: Bearbeitungsstatus, ausführliche Einzelbeschreibung, Zielpfad oder
+   Merge-Ziel sowie Hinweise auf Dubletten, Konflikte oder offene Fragen.
+8. Prüfe vor dem Verschieben, dass Einzelbeschreibungen, Merge-Ergebnisse und
+   Protokoll vollständig sind und jeder aktive Eintrag ohne Originaldatei
+   verständlich und nutzbar ist. Prüfe außerdem, dass außerhalb des neuen
+   Archivlaufs kein Archivpfad eingetragen wurde. Verschiebe anschließend nur
    erfolgreich verarbeitete Originaldateien unverändert und unter Beibehaltung
    ihrer relativen Eingangsstruktur nach
    `90_Archiv/Importe/<Zeitstempel>/Originale/`.
 9. Nicht lesbare, nicht unterstützte oder fehlerhaft verarbeitete Dateien bleiben
    in `00_Eingang`. Vermerke den Grund im Importprotokoll und nenne ihn dem
    Benutzer. Lösche keine Eingangsdatei.
-10. Berichte abschließend knapp, welche Dateien verarbeitet wurden, welche
-    Wissenseinträge neu erstellt oder aktualisiert wurden, wo der Archivlauf
-    liegt und was gegebenenfalls noch im Eingang wartet.
+10. Berichte abschließend knapp, welche Dateien verarbeitet und welche
+    Wissenseinträge neu erstellt oder aktualisiert wurden sowie was
+    gegebenenfalls noch im Eingang wartet. Melde, dass die Originale archiviert
+    wurden, ohne den Archivpfad als weiterführende Quelle oder Link anzubieten.
 
 Der Importauftrag erlaubt ausdrücklich das Aktualisieren und sinnvolle
 Umstrukturieren der betroffenen Wissenseinträge sowie das Verschieben erfolgreich
 verarbeiteter Eingangsdateien ins oben definierte Archiv. Er erlaubt weder das
 Löschen von Originalen noch Änderungen an sachfremden Dateien. Archivierte
-Originale sind unveränderlich; spätere Korrekturen erfolgen in den abgeleiteten
-Wissenseinträgen und werden nachvollziehbar dokumentiert.
+Originale sind unveränderlich und werden nach Abschluss nicht regulär verwendet;
+spätere Korrekturen erfolgen in den selbstständigen Wissenseinträgen und werden
+nachvollziehbar dokumentiert.
 
 ## Verhalten beim Ablegen von Wissen
 
 - Verwende für neue Einträge möglichst eine passende Vorlage aus `70_Vorlagen`.
 - Behandle `00_Eingang` als Warteschlange für noch nicht verarbeitete Dateien,
   nicht als dauerhaften Speicherort.
-- Formuliere sachlich, verständlich und so, dass der Inhalt später ohne den
-  ursprünglichen Chat nachvollziehbar ist.
+- Formuliere sachlich, verständlich und so vollständig, dass der Inhalt später
+  ohne ursprünglichen Chat, Eingangsdatei oder Archivzugriff nachvollziehbar und
+  praktisch nutzbar ist.
 - Trenne bestätigte Tatsachen klar von Vermutungen, Ideen und offenen Fragen.
 - Halte bei zeitabhängigen Informationen das Datum der Erfassung oder Prüfung fest.
-- Verweise auf Quellen und archivierte Originaldateien, wenn sie für das Wissen
-  wichtig sind.
+- Verweise bei Bedarf auf verlässliche öffentliche oder bibliografische Quellen,
+  niemals im normalen Betrieb auf archivierte Originaldateien.
+- Ersetze einen sonst notwendigen Dateiverweis durch eine bessere Beschreibung:
+  übernimm relevante Tabellenwerte, Termine, Definitionen, Abläufe,
+  Voraussetzungen, Ergebnisse und Einschränkungen in angemessenem Detail.
 - Bevorzuge thematisch konsolidierte Wissenseinträge gegenüber einer neuen
   dauerhaften Notiz für jede einzelne Quelldatei.
 - Kopiere externe Bilder, PDFs oder andere Dateien nur auf ausdrücklichen Wunsch
   in das Repository. Dateien, die der Benutzer selbst in `00_Eingang` ablegt,
   sind davon ausgenommen und werden gemäß Importworkflow archiviert.
+
+## Umgang mit Formeln, Rechnungen und Formelsammlungen
+
+- Schreibe Formeln, Formeltabellen und vorgerechnete Standardbeispiele aus
+  Quelldateien nicht vollständig in die abgeleiteten Wissenseinträge ab, wenn sie
+  zuverlässig im Internet nachgeschlagen werden können.
+- Beschreibe stattdessen in verständlichen Worten, was der Zusammenhang bedeutet,
+  wofür er verwendet wird, welche Voraussetzungen gelten und nach welcher Methode
+  eine Aufgabe gelöst wird. Das gilt insbesondere für erklärende Inhalte aus der
+  Elektrotechnik.
+- Verweise für die konkrete Formel oder Rechnung möglichst auf eine verlässliche
+  öffentliche Quelle. Verweise nicht auf die archivierte Originaldatei. Erfinde
+  keinen Link. Wenn keine geeignete Quelle geprüft werden kann, beschreibe den
+  Zusammenhang und das Lösungsverfahren so vollständig wie zuverlässig möglich
+  und kennzeichne verbleibende Lücken als offen.
+- Nenne in der Einzelzusammenfassung, welche Formeln oder Rechenarten eine Quelle
+  behandelt, ohne sie unnötig zu transkribieren.
+- Offizielle schulische Formelsammlungen, insbesondere die für die Matura
+  benötigte Formelsammlung, sind wichtige aufzubewahrende Originale. Bewahre sie
+  unverändert im Archiv auf, verweise aus aktiven Einträgen aber nicht darauf.
+  Sondere sie nicht als vermeintlich redundanten Inhalt aus. Beschreibe Aufbau,
+  Themenumfang, Zulassungskontext und richtige Verwendung selbstständig; konkrete
+  Formeln können über verlässliche öffentliche Quellen belegt werden, ohne die
+  gesamte Sammlung in Markdown zu kopieren.
 
 ## Verhalten bei Projekten
 

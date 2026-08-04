@@ -4,17 +4,20 @@
 
 Kurze Zusammenfassung des Wissens.
 
-## Inhalt
+## Vollständige Beschreibung
 
-Ausführliche Notizen.
+Alle wesentlichen Tatsachen, Begriffe, Daten, Voraussetzungen, Abläufe,
+Ergebnisse, Einschränkungen und offenen Fragen. Der Eintrag muss ohne
+Originaldatei und ohne Archivzugriff verständlich und praktisch nutzbar sein.
 
-## Zugehörige Dateien
+## Herkunft
 
-- Keine
+- Ursprünglicher Dateiname, Herausgeber oder Erfassungsdatum, sofern hilfreich
+- Keine Eingangs- oder Archivpfade
 
 ## Quellen
 
-- Keine
+- Keine oder verlässliche öffentliche beziehungsweise bibliografische Quellen
 
 ## Metadaten
 

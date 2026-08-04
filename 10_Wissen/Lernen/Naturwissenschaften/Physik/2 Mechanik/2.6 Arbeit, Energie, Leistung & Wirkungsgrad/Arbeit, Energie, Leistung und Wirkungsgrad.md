@@ -1,0 +1,57 @@
+# Arbeit, Energie, Leistung und Wirkungsgrad
+
+## Arbeit und Energie
+
+Mechanische Arbeit überträgt Energie. Bei einer konstanten Kraft und geradlinigem Weg gilt
+
+$$W=Fs\cos\alpha,$$
+
+wobei $\alpha$ der Winkel zwischen Kraft und Weg ist. Wirkt die Kraft senkrecht zum Weg, verrichtet sie in diesem Sinn keine Arbeit.
+
+Wichtige Energieformen sind:
+
+- Lageenergie $E_\mathrm{pot}=mgh$
+- Bewegungsenergie $E_\mathrm{kin}=\tfrac12mv^2$
+- Federenergie $E_\mathrm{F}=\tfrac12Dx^2$
+- Rotationsenergie $E_\mathrm{rot}=\tfrac12J\omega^2$
+
+In einem abgeschlossenen System bleibt die Gesamtenergie erhalten. Reibung vernichtet keine Energie, sondern wandelt mechanische Energie überwiegend in innere Energie um.
+
+## Leistung
+
+Leistung beschreibt umgesetzte Energie pro Zeit:
+
+$$P=\frac{W}{t}=\frac{\Delta E}{\Delta t}.$$
+
+Bei gleichförmiger Bewegung und einer Kraft parallel zur Geschwindigkeit gilt $P=Fv$.
+
+## Wirkungsgrad
+
+Der Wirkungsgrad vergleicht nutzbare und zugeführte Energie oder Leistung:
+
+$$\eta=\frac{E_\mathrm{nutz}}{E_\mathrm{zu}}=\frac{P_\mathrm{nutz}}{P_\mathrm{zu}}.$$
+
+Er liegt zwischen null und eins. Bei mehreren hintereinander geschalteten Umwandlungen werden die einzelnen Wirkungsgrade multipliziert.
+
+## Lösungsstrategie
+
+1. Anfangs- und Endzustand festlegen.
+2. Relevante Energieformen und Energiezufuhr oder -verluste notieren.
+3. Energiebilanz aufstellen.
+4. Erst danach Leistung, Zeit oder Wirkungsgrad berechnen.
+5. Bei rollenden Körpern sowohl Translation als auch Rotation berücksichtigen.
+
+## Typische Fehler
+
+- Reibungsarbeit einfach aus der Bilanz weglassen.
+- Energie in Joule und Leistung in Watt verwechseln.
+- Wirkungsgrad als Prozentzahl statt als Dezimalzahl in eine Gleichung einsetzen.
+- Bei Pumpen oder Hebevorgängen Masse, Höhendifferenz und Zeit nicht sauber trennen.
+
+## Herkunft des Wiederaufbaus
+
+- Archiv nur im Notfall herangezogen.
+- Grund: Auf ausdrücklichen Wunsch wurden Theorie und Rechenanwendungen aus den archivierten Schulunterlagen zu einem vollständigen Lerntext verbunden.
+- Auswertung am: 2026-08-04
+- Ausgewertete Dateinamen: `Kapitel 2.6 - 2.8.pdf`, `Physik Beispiele 4.docx`
+

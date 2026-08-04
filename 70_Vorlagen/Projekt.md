@@ -19,9 +19,9 @@ Was soll am Ende erreicht sein?
 
 Weitere Informationen zum Projekt.
 
-## Zugehörige Dateien
+## Zugehörige aktive Dateien
 
-- Keine
+- Keine; keine Eingangs- oder Archivpfade eintragen
 
 ## Quellen
 

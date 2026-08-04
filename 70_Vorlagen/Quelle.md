@@ -5,12 +5,14 @@
 - Typ: Buch / Internet / Schule / Sonstiges
 - Autor oder Herausgeber:
 - Datum:
-- URL oder Speicherort:
+- Öffentliche URL oder bibliografische Angabe:
 - Abgerufen am: JJJJ-MM-TT
 
 ## Kurzbeschreibung
 
-Worum geht es in dieser Quelle?
+Vollständige Beschreibung der wesentlichen Aussagen, Daten, Voraussetzungen,
+Abläufe und Einschränkungen. Die Beschreibung muss ohne Originaldatei und ohne
+Archivzugriff ausreichen.
 
 ## Verwendet für
 
@@ -18,4 +20,5 @@ Worum geht es in dieser Quelle?
 
 ## Notizen
 
-Eigene Zusammenfassung und wichtige Fundstellen.
+Eigene Einordnung, offene Fragen und zeitabhängige Angaben. Keine Eingangs- oder
+Archivpfade eintragen.
