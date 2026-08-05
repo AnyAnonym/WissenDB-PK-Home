@@ -7,7 +7,7 @@ Codex, OpenCode und anderen KI-Assistenten.
 
 | Befehl | Wirkung |
 |---|---|
-| `Wissen eintragen` | Verarbeitet die Dateien aus `00_Eingang`, übernimmt ihr Wissen und archiviert erfolgreiche Originale. |
+| `Wissen eintragen` | Verarbeitet Quelldateien aus `00_Eingang` anhand von Zielprofilen, dokumentiert Unstimmigkeiten und archiviert erfolgreiche Originale. |
 | `Was weiß ich über <Thema>?` | Antwortet ausschließlich mit dem aktiven lokalen Wissensbestand. |
 | `Zeige mir den Originaleintrag zu <Thema>` | Gibt eine aktive Datei vollständig und unverändert aus und nennt darunter ihren Pfad. |
 | `Prüfe die Wissensdatenbank` | Prüft Struktur, Metadaten, Links, Dubletten und sensible Angaben. |
@@ -18,7 +18,8 @@ Die vollständigen und verbindlichen Abläufe stehen in
 ## Grundprinzipien
 
 - `00_Eingang` ist eine Warteschlange. Das Ablegen einer Datei startet noch
-  keinen Import.
+  keinen Import. Offene `KLAERUNGSBEDARF_*.md`-Arbeitsnotizen bleiben dort
+  sichtbar, werden aber nicht selbst als Wissensquelle importiert.
 - Aktive Wissenseinträge sind ohne ursprünglichen Chat, Eingangsdatei und
   Archivzugriff vollständig verständlich.
 - Erfolgreich verarbeitete Originaldateien werden unverändert und mit
@@ -35,7 +36,7 @@ Die vollständigen und verbindlichen Abläufe stehen in
 
 ## Bereiche
 
-- `00_Eingang`: noch nicht verarbeitete Dateien
+- `00_Eingang`: noch nicht verarbeitete Dateien und offene Klärungsnotizen
 - `10_Wissen`: dauerhaftes Wissen nach Themen
 - `20_Projekte`: Vorhaben mit Ziel, Status und nächstem Schritt
 - `30_Anleitungen`: Schritt-für-Schritt-Anleitungen und Checklisten

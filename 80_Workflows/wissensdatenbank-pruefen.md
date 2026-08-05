@@ -17,13 +17,17 @@ Wissensbestand allein durch die Prüfung zu verändern.
 3. fehlende oder widersprüchliche Metadaten, insbesondere `Zuletzt geändert`
 4. defekte relative Markdown-Links und Verweise auf nicht vorhandene Zielpfade
 5. doppelte oder stark überschneidende Themen und Dateititel
-6. unerlaubte Eingangs- oder Archivpfade in aktiven Einträgen
-7. mögliche Geheimnisse, Zugangsdaten, private Netzwerkadressen und unnötige
+6. fehlende, widersprüchliche oder zum Dateiinhalt unpassende Zielprofile sowie
+   Zusammenführungen mit abweichender Architektur, Plattform, Zielgruppe oder
+   Verfahrensweise
+7. unerlaubte Eingangs- oder Archivpfade in aktiven Einträgen
+8. mögliche Geheimnisse, Zugangsdaten, private Netzwerkadressen und unnötige
    personenbezogene Daten
-8. Konsistenz zwischen `AGENTS.md`, `REGELN.md`, `README.md` und
+9. Konsistenz zwischen `AGENTS.md`, `REGELN.md`, `README.md` und
    `80_Workflows/README.md`
-9. wartende Dateien in `00_Eingang`, ohne sie automatisch zu importieren
-10. veraltete, ungeprüfte oder als offen gekennzeichnete Wissenseinträge
+10. wartende Quelldateien und offene `KLAERUNGSBEDARF_*.md`-Arbeitsnotizen in
+    `00_Eingang`, ohne sie automatisch zu importieren
+11. veraltete, ungeprüfte oder als offen gekennzeichnete Wissenseinträge
 
 ## Archivgrenze
 

@@ -3,18 +3,32 @@
 Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 
 1. Neue Dateien, deren Wissen übernommen werden soll, kommen in `00_Eingang`.
-   Dieser Ordner ist eine Warteschlange und kein dauerhafter Ablageort.
+   Dieser Ordner ist eine Warteschlange und kein dauerhafter Ablageort. Offene
+   Dateien nach dem Muster `KLAERUNGSBEDARF_*.md` sind davon ausgenommene
+   Arbeitsnotizen und werden nicht erneut als Wissensquelle importiert.
 2. Das Ablegen allein startet keine Verarbeitung. Die Aufforderung `Wissen
    eintragen` oder eine sinngleiche Formulierung startet den vollständigen Ablauf
    nach `80_Workflows/wissen-eintragen.md`.
 3. Jede Eingangsdatei wird vollständig gelesen, ausführlich beschrieben und
    anschließend mit dem relevanten vorhandenen Wissen verglichen. Die
    Beschreibung muss für den normalen Gebrauch ohne Originaldatei ausreichen.
-4. Neue Erkenntnisse werden in passende bestehende Einträge integriert. Nur wenn
-   kein passender Eintrag existiert, wird mit einer geeigneten Vorlage aus
-   `70_Vorlagen` ein neuer angelegt. Unnötige Dubletten sind zu vermeiden.
+4. Vor dem Vergleich erhält jede Eingangsquelle und jeder mögliche Zieleintrag ein
+   Zielprofil aus Eintragstyp und Zweck, Gegenstand oder System, Produkt oder
+   Variante, Architektur oder Plattform, Zielgerät oder Zielgruppe,
+   Einsatzumgebung oder Verfahren sowie Geltungsbereich und Ausschlüssen.
+   Unbekannte Werte werden nicht geraten. Neue Erkenntnisse werden nur bei
+   vereinbaren Zielprofilen in bestehende Einträge integriert; abweichende
+   Identitätsmerkmale erfordern getrennte Einträge. Zielabhängige neue oder
+   geänderte Einträge übernehmen das Profil als Metadatenkarte.
 5. Widersprüche werden mit Quelle und Datum sichtbar dokumentiert und nicht still
-   überschrieben. Fehlende Angaben werden als unbekannt oder offen markiert.
+   überschrieben. Bei ihrer Bewertung gilt: aktuelle ausdrückliche
+   Benutzeranweisung vor eindeutig benutzerverfasster Angabe, diese vor geprüfter
+   verlässlicher Quelle und diese vor älterer oder KI-erzeugter Ergänzung.
+   Technisch mögliche getrennte oder vorläufige Einträge werden trotz offener
+   Punkte angelegt; fehlende Angaben bleiben `unbekannt` oder `offen`. Zusätzlich
+   wird nach `70_Vorlagen/Klaerungsbedarf.md` eine Datei
+   `00_Eingang/KLAERUNGSBEDARF_JJJJ-MM-TT_HHMMSS.md` erstellt. Sie hält Ort,
+   Zeitpunkt, Beobachtung, vorläufiges Vorgehen und konkrete Rückfragen fest.
 6. Aktive Einträge dürfen weder Eingangs- noch Archivpfade als Quellen oder
    weiterführende Lesestellen verwenden. Ein sonst notwendiger Dateiverweis wird
    durch eine vollständigere Beschreibung ersetzt. Der ursprüngliche Dateiname
@@ -42,10 +56,14 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
     Bearbeitungsstatus, Merge-Zielen, Konflikten und offenen Fragen. Das Protokoll
     ist interne Archivmetadokumentation und wird nicht aus aktiven Bereichen
     verlinkt.
-12. Eine Datei wird erst aus `00_Eingang` verschoben, wenn Wissensübernahme,
+12. Eine Quelldatei wird erst aus `00_Eingang` verschoben, wenn Wissensübernahme,
     selbstständige Beschreibung und Protokoll geprüft sind und außerhalb des
-    neuen Archivlaufs keine Archivpfade eingetragen wurden. Bei Fehlern bleibt sie
-    im Eingang und der Benutzer erhält einen Hinweis.
+    neuen Archivlaufs keine Archivpfade eingetragen wurden. Dokumentierte
+    Unstimmigkeiten verhindern die Archivierung nicht, wenn alle technisch
+    möglichen Einträge angelegt, Unsicherheiten sichtbar markiert und eine offene
+    Klärungsdatei erstellt wurden. Nicht lesbare, nicht unterstützte,
+    geheimnishaltige oder nicht sicher verarbeitbare Quelldateien bleiben im
+    Eingang.
 13. Archivierte Originale werden nicht verändert oder gelöscht. Bestehende Inhalte
     werden ebenfalls nicht ohne ausdrücklichen Auftrag gelöscht.
 14. Ein sonstiger Zugriff auf einen abgeschlossenen Archivlauf ist nur auf

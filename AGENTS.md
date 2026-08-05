@@ -21,7 +21,8 @@ Benutzer keine andere Sprache verlangt.
 
 ## Aufbau der Wissensdatenbank
 
-- `00_Eingang`: vom Benutzer abgelegte Dateien, die auf den nächsten Import warten
+- `00_Eingang`: vom Benutzer abgelegte Dateien, die auf den nächsten Import warten,
+  sowie offene, von der KI erzeugte Klärungsdateien
 - `10_Wissen`: dauerhaftes Wissen zu Alltag, Finanzen, Technik und Lernen
 - `20_Projekte`: Vorhaben mit Ziel, Status, Aufgaben und nächstem Schritt
 - `30_Anleitungen`: nachvollziehbare Schritt-für-Schritt-Anleitungen und Checklisten
@@ -98,11 +99,33 @@ eines Originaleintrags muss vor der Ausgabe genau eine aktive Datei feststehen.
   `Zuletzt geändert` auf das aktuelle lokale Datum gesetzt. `Erstellt` bleibt
   unverändert; reine Lesezugriffe ändern keines der beiden Daten.
 - Behandle `00_Eingang` als Warteschlange für noch nicht verarbeitete Dateien,
-  nicht als dauerhaften Speicherort.
+  nicht als dauerhaften Speicherort. Dateien namens
+  `KLAERUNGSBEDARF_*.md` sind offene Arbeitsnotizen und werden nicht
+  erneut als Wissensquelle importiert.
+- Erstelle vor dem Vergleich und einer möglichen Zusammenführung für jede
+  Eingangsquelle und jeden möglichen Zieleintrag ein Zielprofil. Es beschreibt
+  mindestens Eintragstyp und Zweck, Gegenstand oder System, Produkt oder
+  Variante, Architektur oder Plattform, Zielgerät oder Zielgruppe,
+  Einsatzumgebung oder Verfahren sowie Geltungsbereich und Ausschlüsse. Nicht
+  ermittelbare Werte werden als `unbekannt`, sachlich unzutreffende Felder als
+  `nicht relevant` markiert.
+- Führe Inhalte nur zusammen, wenn ihre Zielprofile vereinbar sind. Abweichende
+  Identitätsmerkmale wie Produktvariante, Architektur, Plattform, Zielgerät oder
+  Verfahren erfordern getrennte Einträge. Übernimm das Zielprofil als
+  Metadatenkarte in zielabhängige neue oder geänderte Einträge.
 - Formuliere sachlich, verständlich und so vollständig, dass der Inhalt später
   ohne ursprünglichen Chat, Eingangsdatei oder Archivzugriff nachvollziehbar und
   praktisch nutzbar ist.
 - Trenne bestätigte Tatsachen klar von Vermutungen, Ideen und offenen Fragen.
+- Bewerte Unstimmigkeiten in dieser Reihenfolge: aktuelle ausdrückliche
+  Benutzeranweisung, eindeutig benutzerverfasste Angabe, geprüfte verlässliche
+  Quelle, ältere oder KI-erzeugte Ergänzung. Löse verbleibende Konflikte nicht
+  still auf. Lege die technisch möglichen getrennten oder vorläufigen Einträge
+  trotzdem an, kennzeichne offene Punkte und erstelle nach
+  `70_Vorlagen/Klaerungsbedarf.md` eine Datei
+  `00_Eingang/KLAERUNGSBEDARF_JJJJ-MM-TT_HHMMSS.md`. Sie nennt klar, wo, wann und was
+  auffiel, welche Entscheidung vorläufig getroffen wurde und welche Anweisung
+  des Benutzers benötigt wird.
 - Halte bei zeitabhängigen Informationen das Datum der Erfassung oder Prüfung fest.
 - Verweise bei Bedarf auf verlässliche öffentliche oder bibliografische Quellen,
   niemals im normalen Betrieb auf archivierte Originaldateien.

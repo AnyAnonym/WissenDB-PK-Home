@@ -5,6 +5,20 @@
 - Bereich:
 - Erstellt: JJJJ-MM-TT
 - Zuletzt geändert: JJJJ-MM-TT
+- Eintragstyp: Wissensnotiz
+
+## Zielprofil
+
+- Gegenstand oder System:
+- Produkt oder Variante:
+- Architektur oder Plattform:
+- Zielgerät oder Zielgruppe:
+- Einsatzumgebung oder Verfahren:
+- Geltungsbereich:
+- Ausdrückliche Ausschlüsse:
+
+Nicht zuverlässig bestimmbare Werte als `unbekannt`, sachlich unzutreffende
+Felder als `nicht relevant` markieren.
 
 ## Kurzfassung
 
