@@ -26,9 +26,12 @@ Nicht als Wissensgrundlage verwendet werden `00_Eingang`, `70_Vorlagen`,
 
 1. Bestimme das Thema einschließlich naheliegender Schreibweisen, Abkürzungen
    und vorhandener Unterbegriffe.
-2. Durchsuche ausschließlich die erlaubten lokalen Wissensbereiche.
-3. Lies alle relevanten Treffer vollständig und berücksichtige interne Verweise
-   nur innerhalb der erlaubten Bereiche.
+2. Führe die stufenweise, Token-sparende Suche nach
+   [Werkzeuge/wissenssuche.md](Werkzeuge/wissenssuche.md) aus. Beginne im kleinsten
+   plausiblen Bereich und erweitere nur bei Bedarf. Durchsuche ausschließlich die
+   erlaubten lokalen Wissensbereiche.
+3. Lies alle fachlich relevanten Kandidaten vollständig und berücksichtige
+   interne Verweise nur innerhalb der erlaubten Bereiche.
 4. Fasse ausschließlich Aussagen zusammen, die im lokalen Bestand enthalten sind.
 5. Kennzeichne Widersprüche, offene Fragen, veraltete Angaben und den Status
    `Entwurf`, falls vorhanden.

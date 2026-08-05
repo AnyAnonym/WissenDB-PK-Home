@@ -25,23 +25,27 @@ Pfad dieser Datei genannt.
 
 ## Ablauf
 
-1. Ermittle anhand des genannten Themas die passenden aktiven Dateien.
+1. Rufe [Werkzeuge/originaleintrag-anzeigen.ps1](Werkzeuge/originaleintrag-anzeigen.ps1)
+   mit dem Thema als `-Suchbegriff` und dem nach
+   [Werkzeuge/wissenssuche.md](Werkzeuge/wissenssuche.md) kleinsten plausiblen
+   `-Startpfad` auf. Erweitere den Startpfad nur bei Bedarf.
 2. Wenn genau eine Datei eindeutig passt, wähle diese aus.
 3. Wenn mehrere Dateien infrage kommen, gib nur eine kurze Auswahlliste mit den
    jeweiligen relativen Pfaden aus und bitte den Benutzer um eine eindeutige
    Auswahl. Gib in diesem Schritt noch keinen Dateiinhalt aus.
 4. Wenn keine Datei passt, melde dies knapp und erfinde keinen Eintrag oder Pfad.
-5. Lies die ausgewählte Datei vollständig und unverändert.
-6. Gib zuerst den gesamten Dateiinhalt ohne Zusammenfassung, Korrektur,
-   Umformulierung, Auslassung oder Zeilennummern in einem Codeblock aus. Verwende
-   eine Codeblock-Begrenzung, die im Dateiinhalt nicht vorkommt.
-7. Setze unmittelbar darunter als letzte Zeile der Antwort:
+5. Rufe das Skript nach einer Auswahl erneut mit `-Pfad` auf. Es liest die Datei
+   und erzeugt den ausgabefertigen Codeblock. Lies die Datei nicht zusätzlich ein.
+6. Übernimm die Skriptausgabe ohne Zusammenfassung, Korrektur, Umformulierung,
+   Auslassung oder Zeilennummern. Sie enthält zuerst den gesamten Dateiinhalt in
+   einem Codeblock und unmittelbar darunter als letzte Zeile:
    `Pfad: <vollständiger absoluter Dateipfad>`
 
 ## Ausgaberegeln
 
 - Vor dem Dateiinhalt steht keine fachliche Einleitung.
 - Nach der Pfadzeile folgt kein weiterer Text.
+- Die Skriptausgabe wird unverändert als Antwort verwendet.
 - Reicht eine einzelne Antwort technisch nicht für den vollständigen Inhalt aus,
   wird er ohne Auslassungen in fortlaufend nummerierten Teilen ausgegeben. Die
   Pfadzeile erscheint ausschließlich ganz unten im letzten Teil.
