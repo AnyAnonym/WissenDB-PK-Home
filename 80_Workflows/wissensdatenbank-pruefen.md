@@ -22,7 +22,9 @@ Wissensbestand allein durch die Prüfung zu verändern.
    Verfahrensweise
 7. unerlaubte Eingangs- oder Archivpfade in aktiven Einträgen
 8. mögliche Geheimnisse, Zugangsdaten, private Netzwerkadressen und unnötige
-   personenbezogene Daten
+   personenbezogene Daten außerhalb von `Sicherheit`; im Sicherheitsbereich
+   dürfen ausschließlich Namen geprüft und keine Inhalte oder weiteren Metadaten
+   gelesen werden
 9. Konsistenz zwischen `AGENTS.md`, `REGELN.md`, `README.md` und
    `80_Workflows/README.md`
 10. wartende Quelldateien und offene `KLAERUNGSBEDARF_*.md`-Arbeitsnotizen in

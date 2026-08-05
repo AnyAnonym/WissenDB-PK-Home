@@ -33,6 +33,9 @@ Benutzer keine andere Sprache verlangt.
 - `80_Workflows`: festgelegte Abläufe für wiederkehrende KI-Aufträge
 - `90_Archiv`: unveränderte Originaldateien und interne Protokolle abgeschlossener
   Importläufe; kein regulärer Wissens- oder Quellenbereich
+- `Sicherheit`: Blackbox-Bereich für Schlüssel und andere vom Benutzer benannte
+  Sicherheitsdateien; Dateinamen dürfen gelesen, Dateiinhalte niemals geöffnet
+  oder ausgewertet werden
 
 Die Projektübersicht befindet sich in
 [20_Projekte/PROJEKTUEBERSICHT.md](20_Projekte/PROJEKTUEBERSICHT.md).
@@ -82,6 +85,8 @@ ausgeführt:
 - `Was weiß ich über <Thema>?` → `80_Workflows/wissen-abfragen.md`
 - `Zeige mir den Originaleintrag zu <Thema>` →
   `80_Workflows/originaleintrag-anzeigen.md`
+- `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` →
+  `80_Workflows/sicherheit-auflisten.md`
 - `Prüfe die Wissensdatenbank` → `80_Workflows/wissensdatenbank-pruefen.md`
 
 Eindeutig sinngleiche Formulierungen gelten ebenfalls. Das bloße Ablegen von
@@ -174,13 +179,29 @@ eines Originaleintrags muss vor der Ausgabe genau eine aktive Datei feststehen.
 
 ## Sicherheit und Datenschutz
 
-- Speichere keine Passwörter, Zugangsschlüssel, Tokens oder anderen Geheimnisse.
+- Behandle `Sicherheit` und insbesondere `Sicherheit/Schlüssel` als Blackbox. Du
+  darfst ausschließlich Datei- und Ordnernamen lesen. Öffne, durchsuche,
+  analysiere, indiziere, rendere, kopiere oder hashe keine dort abgelegte Datei
+  und gib niemals ihren Inhalt aus. Verwende diese Dateien nicht als Wissen oder
+  Quelle.
+- Eine vom Benutzer ausdrücklich als Schlüssel oder Sicherheitsdatei bezeichnete
+  Datei darf ungeöffnet nach `Sicherheit/Schlüssel` oder in einen anderen vom
+  Benutzer bestimmten Sicherheitsunterordner verschoben werden. Bewahre den
+  Dateinamen exakt. Bei einer Namenskollision wird weder überschrieben noch
+  umbenannt, sondern nachgefragt.
+- Wenn der Benutzer alle Schlüssel oder Sicherheitssachen sehen möchte, führe
+  `80_Workflows/sicherheit-auflisten.md` aus. Gib ausschließlich die Namen aus,
+  keine Inhalte, Größen, Zeitstempel, Prüfsummen oder sonstigen Metadaten.
+- Schlüsseldateien und andere Geheimnisse werden nicht von Git erfasst, nicht
+  archiviert und nicht in aktive Wissenseinträge übernommen.
 - Übernimm personenbezogene Daten nur, wenn sie für den Auftrag notwendig sind.
 - Weise vor einer Veröffentlichung auf möglicherweise private Inhalte hin.
 - Lösche oder überschreibe bestehende Inhalte nur auf ausdrücklichen Auftrag.
-- Wenn eine Eingangsdatei vermutlich Geheimnisse enthält, übernimm ihren Inhalt
-  nicht in die Wissensdatenbank und verschiebe sie nicht ins Archiv. Lass sie im
-  Eingang und weise den Benutzer darauf hin.
+- Wenn eine Eingangsdatei nur vermutlich ein Geheimnis enthält, öffne sie nicht.
+  Lass sie bis zu einer ausdrücklichen Einordnung im Eingang und weise den
+  Benutzer allein anhand des Dateinamens darauf hin. Bestätigt der Benutzer sie
+  als Sicherheitsdatei, darfst du sie ungeöffnet in den Sicherheitsbereich
+  verschieben.
 
 ## Git und Änderungen
 

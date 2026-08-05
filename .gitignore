@@ -17,6 +17,9 @@ Desktop.ini
 *.pfx
 *.p12
 
+# Sicherheitsbereich: Inhalte bleiben lokal und dürfen nicht versioniert werden
+/Sicherheit/**
+
 # Temporäre Dateien und Werkzeug-Caches
 *.tmp
 *.temp

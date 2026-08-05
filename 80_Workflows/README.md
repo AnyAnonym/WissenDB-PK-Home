@@ -11,6 +11,7 @@ Anfragen starten den jeweiligen Workflow.
 | `Wissen eintragen` | [wissen-eintragen.md](wissen-eintragen.md) | Quelldateien anhand von Zielprofilen vollständig verarbeiten, Unstimmigkeiten dokumentieren und erfolgreiche Originale archivieren |
 | `Was weiß ich über <Thema>?` | [wissen-abfragen.md](wissen-abfragen.md) | Ausschließlich den aktiven lokalen Wissensbestand zum Thema zusammenfassen |
 | `Zeige mir den Originaleintrag zu <Thema>` | [originaleintrag-anzeigen.md](originaleintrag-anzeigen.md) | Eine aktive Datei vollständig und unverändert ausgeben und darunter ihren Pfad nennen |
+| `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` | [sicherheit-auflisten.md](sicherheit-auflisten.md) | Ausschließlich Datei- und Ordnernamen im Sicherheitsbereich auflisten |
 | `Prüfe die Wissensdatenbank` | [wissensdatenbank-pruefen.md](wissensdatenbank-pruefen.md) | Struktur, Metadaten, Links, Dubletten und sensible Angaben prüfen |
 
 ## Abgrenzung
@@ -21,6 +22,8 @@ Anfragen starten den jeweiligen Workflow.
 - Eine Wissensabfrage verändert keine Datei und verwendet weder Internet noch Archiv.
 - Ein Originaleintrag wird ausschließlich aus dem aktiven Bestand gelesen; bei
   mehreren möglichen Dateien muss der Benutzer zuerst eine auswählen.
+- Der Sicherheitsbereich ist eine Blackbox. Nur Namen dürfen aufgelistet werden;
+  Inhalte und weitere Metadaten bleiben unberührt.
 - Bei einer unklaren Zuordnung fragt der Assistent nach, bevor er einen
   schreibenden Workflow startet.
 

@@ -19,8 +19,11 @@ unverändert und nachvollziehbar archivieren.
 1. Prüfe den Git-Status und erfasse alle regulären Quelldateien in `00_Eingang`,
    auch in Unterordnern. Dateien nach dem Muster `KLAERUNGSBEDARF_*.md` sind
    offene Arbeitsnotizen: Weise auf sie hin, aber behandle sie nicht erneut als
-   Wissensquelle. Bereits vorhandene Änderungen außerhalb des Importauftrags
-   bleiben unangetastet.
+   Wissensquelle. Vom Benutzer als Schlüssel oder Sicherheitsdateien bezeichnete
+   Dateien dürfen nur anhand ihres Namens erkannt und nach den Regeln in
+   `80_Workflows/Werkzeuge/sicherheitsdateien.md` ungeöffnet verschoben werden;
+   sie gehören nicht zu den Quelldateien. Bereits vorhandene Änderungen außerhalb
+   des Importauftrags bleiben unangetastet.
 2. Lege zu Beginn einen lokalen Zeitstempel im Format `JJJJ-MM-TT_HHMMSS` fest.
    Der Archivpfad lautet `90_Archiv/Importe/<Zeitstempel>/`.
 3. Lies jede unterstützte Datei vollständig und erstelle für jede Datei eine
@@ -80,7 +83,9 @@ unverändert und nachvollziehbar archivieren.
 13. Nicht lesbare, nicht unterstützte, geheimnishaltige oder nicht sicher
     verarbeitbare Quelldateien bleiben mit dokumentiertem Grund in `00_Eingang`.
     Diese Sicherheits- und Verarbeitungsgrenze hat Vorrang vor der Regel, trotz
-    Unstimmigkeiten Einträge anzulegen.
+    Unstimmigkeiten Einträge anzulegen. Ausdrücklich bezeichnete
+    Sicherheitsdateien werden stattdessen ungeöffnet in den Sicherheitsbereich
+    verschoben und weder archiviert noch beschrieben.
 14. Berichte abschließend knapp über verarbeitete Dateien, neue oder aktualisierte
     Einträge, getrennte Varianten, archivierte Originale, erzeugte
     Klärungsdateien und noch wartende Dateien.

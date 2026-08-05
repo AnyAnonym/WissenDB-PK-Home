@@ -80,25 +80,38 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 17. Ein Projekt mit dem Status `In Arbeit` besitzt einen konkreten nächsten Schritt.
 18. Externe Dateien werden nur auf ausdrücklichen Wunsch in das Repository kopiert.
     Das bewusste Ablegen durch den Benutzer in `00_Eingang` gilt als solcher Wunsch.
-19. Passwörter, Zugangsdaten und andere Geheimnisse werden weder in Wissen noch
-    Archiv übernommen. Verdächtige Dateien bleiben ungeändert im Eingang und
-    werden dem Benutzer gemeldet.
-20. Neue Wissenseinträge enthalten `Erstellt` und `Zuletzt geändert`. Für
+19. `Sicherheit` ist ein Blackbox-Bereich. Unter `Sicherheit/Schlüssel` liegen die
+    vom Benutzer benannten Schlüsseldateien. Ein KI-Assistent darf dort nur
+    Datei- und Ordnernamen lesen. Inhalte, Vorschauen, Volltextsuchen, Hashwerte,
+    Größen, Zeitstempel und sonstige Metadaten sind verboten. Sicherheitsdateien
+    werden weder in Wissen noch Archiv übernommen und bleiben von Git
+    ausgeschlossen.
+20. Eine vom Benutzer ausdrücklich bezeichnete Schlüssel- oder Sicherheitsdatei
+    darf ungeöffnet aus `00_Eingang` in den passenden Sicherheitsunterordner
+    verschoben werden. Ihr Dateiname bleibt exakt erhalten. Bei einer
+    Namenskollision darf weder überschrieben noch umbenannt werden. Eine nur
+    verdächtige Datei bleibt ungeöffnet im Eingang, bis der Benutzer sie
+    eingeordnet hat.
+21. Neue Wissenseinträge enthalten `Erstellt` und `Zuletzt geändert`. Für
     `Erstellt` wird automatisch das lokale Datum der erstmaligen Aufnahme in die
     Wissensdatenbank verwendet; der Benutzer muss es nicht angeben. Bei jeder
     inhaltlichen Änderung wird nur `Zuletzt geändert` auf das aktuelle lokale
     Datum gesetzt. `Erstellt` bleibt unverändert; ein reiner Lesezugriff ändert
     keines der beiden Daten.
-21. `Was weiß ich über <Thema>?` verwendet ausschließlich den aktiven lokalen
+22. `Was weiß ich über <Thema>?` verwendet ausschließlich den aktiven lokalen
     Wissensbestand, weder Internet noch Eingang oder Archiv, und verändert nichts.
-22. `Zeige mir den Originaleintrag zu <Thema>` gibt den vollständigen,
+23. `Zeige mir den Originaleintrag zu <Thema>` gibt den vollständigen,
     unveränderten Inhalt genau einer eindeutig bestimmten aktiven Datei aus und
     nennt darunter als letzte Zeile ihren vollständigen lokalen Pfad. Bei mehreren
     möglichen Dateien muss der Benutzer zuerst auswählen. Der Workflow verwendet
     weder Internet noch Eingang oder Archiv und verändert nichts.
-23. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,
+24. `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` listet
+    nach `80_Workflows/sicherheit-auflisten.md` ausschließlich die Namen im
+    Sicherheitsbereich auf. Es liest keine Dateiinhalte oder weiteren Metadaten
+    und verändert nichts.
+25. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,
     Dubletten und sensible Angaben nach
     `80_Workflows/wissensdatenbank-pruefen.md` und ist ohne zusätzlichen
     Änderungsauftrag rein lesend.
-24. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
+26. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
     Deutsch sein.

@@ -10,6 +10,7 @@ Codex, OpenCode und anderen KI-Assistenten.
 | `Wissen eintragen` | Verarbeitet Quelldateien aus `00_Eingang` anhand von Zielprofilen, dokumentiert Unstimmigkeiten und archiviert erfolgreiche Originale. |
 | `Was weiß ich über <Thema>?` | Antwortet ausschließlich mit dem aktiven lokalen Wissensbestand. |
 | `Zeige mir den Originaleintrag zu <Thema>` | Gibt eine aktive Datei vollständig und unverändert aus und nennt darunter ihren Pfad. |
+| `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` | Listet ausschließlich Namen aus dem Sicherheitsbereich auf, niemals Inhalte oder Metadaten. |
 | `Prüfe die Wissensdatenbank` | Prüft Struktur, Metadaten, Links, Dubletten und sensible Angaben. |
 
 Die vollständigen und verbindlichen Abläufe stehen in
@@ -46,6 +47,8 @@ Die vollständigen und verbindlichen Abläufe stehen in
 - `70_Vorlagen`: Vorlagen für einheitliche Einträge
 - `80_Workflows`: wiederkehrende KI-Aufträge und ihre Abläufe
 - `90_Archiv`: unveränderte Originale und interne Importprotokolle
+- `Sicherheit`: lokale Blackbox für Schlüssel und andere Sicherheitsdateien;
+  Inhalte werden weder gelesen noch mit Git versioniert
 
 ## Arbeitsanweisungen
 
