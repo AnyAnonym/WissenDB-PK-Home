@@ -1,8 +1,18 @@
 # Schulbeginn 2026/2027
 
+## Zielprofil
+
+- Gegenstand oder System: Ablauf des Schulbeginns der HTL Elektrotechnik
+- Produkt oder Variante: Schuljahr 2026/2027
+- Architektur oder Plattform: nicht relevant
+- Zielgerät oder Zielgruppe: Schüler und beteiligte Personen der HTL Elektrotechnik
+- Einsatzumgebung oder Verfahren: zeitliche Orientierung für die Programmpunkte am ersten Schultag
+- Geltungsbereich: Montag, 14. September 2026
+- Ausdrückliche Ausschlüsse: individuelle Klassen-, Raum- und Anwesenheitsinformationen
+
 ## Kurzfassung
 
-Der vorliegende Ausschnitt nennt für Montag, den 14. September 2026, drei Programmpunkte zum Schulbeginn. Die Abkürzungen und die Zielgruppen einzelner Zeilen werden in der Quelle nicht erklärt.
+Der vorliegende Ausschnitt nennt für Montag, den 14. September 2026, drei Programmpunkte zum Schulbeginn.
 
 ## Ablauf am 14. September 2026
 
@@ -16,8 +26,6 @@ Der vorliegende Ausschnitt nennt für Montag, den 14. September 2026, drei Progr
 
 - Stand der Erfassung: 2026-08-04; der Termin liegt in der Zukunft.
 - Die Datei enthält keine individuelle Klassen-, Raum- oder Anwesenheitsinformation.
-- Offen ist, wofür `T`, `JV`, `KV`, `WP`, `NT` und `AVen` genau stehen und welche Programmpunkte für den Benutzer persönlich gelten.
-- Für die persönliche Planung sollte der Ablauf kurz vor Schulbeginn mit einer aktuellen Mitteilung der Schule abgeglichen werden.
 
 ## Herkunft und Vollständigkeit
 
@@ -27,7 +35,9 @@ Der vorliegende Ausschnitt nennt für Montag, den 14. September 2026, drei Progr
 ## Metadaten
 
 - Bereich: Lernen / Schule / HTL Elektrotechnik
+- Erstellt: 2026-08-04
 - Termin: 2026-09-14
 - Erfasst: 2026-08-04
-- Zuletzt geändert: 2026-08-04
-- Status: bevorstehend; persönliche Relevanz teilweise offen
+- Zuletzt geändert: 2026-08-05
+- Eintragstyp: Wissensnotiz
+- Status: bevorstehend

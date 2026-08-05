@@ -3,8 +3,11 @@
 ## Metadaten
 
 - Kapitel: 2
+- Bereich: Lernen / Naturwissenschaften / Physik / Mechanik
 - Erstellt: 2026-08-04
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
+- Überprüft: 2026-08-04
+- Status: aktuell
 
 ## Kurzfassung
 
@@ -56,10 +59,3 @@ erforderlicher Bestandteil des dauerhaften Wissens.
 
 - OpenStax, [University Physics Volume 1](https://openstax.org/details/books/university-physics-volume-1), geprüft am 2026-08-04.
 - Schulischer Themenumfang: die unter „Herkunft und abgedeckter Umfang“ genannten Unterlagen, vollständig inhaltlich ausgewertet.
-
-## Metadaten
-
-- Bereich: Lernen / Naturwissenschaften / Physik / Mechanik
-- Erstellt: 2026-08-04
-- Überprüft: 2026-08-04
-- Status: aktuell

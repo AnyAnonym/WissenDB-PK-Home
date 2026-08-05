@@ -1,5 +1,15 @@
 # Grundlagen der Programmiersprache C
 
+## Zielprofil
+
+- Gegenstand oder System: Einführung in die Programmiersprache C
+- Produkt oder Variante: schulischer C-Kurs, Fassung 2024-12-01
+- Architektur oder Plattform: Microsoft Visual Studio unter Windows; Beispiele teilweise in einer C++-Projektumgebung
+- Zielgerät oder Zielgruppe: Lernende einer technischen Schule mit grundlegenden Programmierkenntnissen
+- Einsatzumgebung oder Verfahren: Konsolenprogramme schrittweise entwickeln, kompilieren, ausführen und debuggen
+- Geltungsbereich: C-Grundlagen bis Dateien, Bitoperationen und dynamischer Speicher
+- Ausdrückliche Ausschlüsse: vollständige Darstellung des C-Standards, portable Übertragbarkeit aller Microsoft-spezifischen Beispiele und vertiefte Mikrocontrollerprogrammierung
+
 ## Kurzfassung
 
 Der importierte C-Kurs ist eine schulische Einführung mit Microsoft Visual Studio. Er behandelt den Weg vom ersten Konsolenprogramm bis zu Funktionen, Zeigern, Arrays, Strukturen, Dateien, Bitoperationen und dynamischem Speicher.
@@ -49,6 +59,6 @@ Die Stundentafel ordnet C dem technischen Pflichtgegenstand „Fachspezifische I
 
 - Bereich: Technik / Programmieren / C
 - Erstellt: 2026-08-04
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
 - Überprüft: 2026-08-04
 - Status: aktuell

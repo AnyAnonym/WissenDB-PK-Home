@@ -12,6 +12,7 @@ Codex, OpenCode und anderen KI-Assistenten.
 | `Zeige mir den Originaleintrag zu <Thema>` | Gibt eine aktive Datei vollständig und unverändert aus und nennt darunter ihren Pfad. |
 | `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` | Listet ausschließlich Namen aus dem Sicherheitsbereich auf, niemals Inhalte oder Metadaten. |
 | `Prüfe die Wissensdatenbank` | Prüft Struktur, Metadaten, Links, Dubletten und sensible Angaben. |
+| `Commit` | Committet alle von Git sichtbaren Änderungen lokal; ein Push ist nicht enthalten. |
 
 Die vollständigen und verbindlichen Abläufe stehen in
 [80_Workflows/README.md](80_Workflows/README.md).

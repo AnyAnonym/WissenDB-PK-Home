@@ -1,6 +1,10 @@
 # Projektübersicht
 
-- Zuletzt geändert: 2026-08-04
+## Metadaten
+
+- Erstellt: 2026-08-03
+- Zuletzt geändert: 2026-08-05
+- Eintragstyp: Projektübersicht
 
 ## In Arbeit
 

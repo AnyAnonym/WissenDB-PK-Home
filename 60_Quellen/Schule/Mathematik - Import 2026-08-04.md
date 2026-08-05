@@ -4,8 +4,9 @@
 
 - Quellentyp: Schulmaterialien und Unterrichtsunterlagen
 - Importkennung: `2026-08-04_094550`
+- Erstellt: 2026-08-04
 - Erfasst: 2026-08-04
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
 - Status: importiert; eine vermutlich sensible Datei wurde nicht verarbeitet
 
 ## Kurzbeschreibung
@@ -34,8 +35,8 @@ Formelsammlung.
   Westermann-Seiten wurden am 2026-08-04 geprüft; drei nicht verifizierbare
   Verweise wurden nicht als verlässliche Quellen übernommen.
 - Ein Elternbrief mit einem vermutlich vertraulichen Bestell- oder Zugangscode
-  wurde nicht verarbeitet. Sein aktueller Verbleib ist im aktiven Bestand nicht
-  dokumentiert; er befindet sich derzeit nicht in `00_Eingang`.
+  wurde nicht verarbeitet. Weder der Brief noch der Code gehören zum aktiven
+  Wissensbestand; Angaben daraus wurden nicht gespeichert.
 
 ## Abgeleitete Einträge
 

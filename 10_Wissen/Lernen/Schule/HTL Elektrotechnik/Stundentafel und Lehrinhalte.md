@@ -1,10 +1,18 @@
 # HTL Elektrotechnik – Stundentafel und Lehrinhalte
 
+## Zielprofil
+
+- Gegenstand oder System: Stundentafel und Lehrinhalte der HTL Elektrotechnik
+- Produkt oder Variante: fünfjährige elektrotechnische Ausbildung
+- Architektur oder Plattform: nicht relevant
+- Zielgerät oder Zielgruppe: Schüler und Interessierte der HTL Elektrotechnik
+- Einsatzumgebung oder Verfahren: Orientierung über Wochenstunden, Pflichtgegenstände, Vertiefungen und Lehrinhalte
+- Geltungsbereich: alle fünf Ausbildungsjahre der dokumentierten Stundentafel
+- Ausdrückliche Ausschlüsse: individuelle Klassen-, Wahl-, Stundenplan- und Leistungsdaten
+
 ## Kurzfassung
 
 Die fünfjährige Ausbildung umfasst 185 Wochenstunden. Neben Allgemeingegenständen bilden acht Gegenstände aus Fachtheorie und Fachpraxis den technischen Kern. Im vierten und fünften Jahr kommen wählbare Vertiefungen hinzu.
-
-Die Quelle nennt keine konkrete Klasse oder das aktuell besuchte Ausbildungsjahr. Daher wird hier nicht angenommen, welche Jahresspalte persönlich gilt.
 
 ## Wochenstunden nach Ausbildungsjahr
 
@@ -72,7 +80,8 @@ Für das fünfte Jahr nennt die Lehrinhaltsübersicht die Planung, Konstruktion 
 ## Metadaten
 
 - Bereich: Lernen / Schule / HTL Elektrotechnik
+- Erstellt: 2026-08-04
 - Erfasst: 2026-08-04
-- Zuletzt geändert: 2026-08-04
-- Gültigkeitszeitraum der Stundentafel: in der Quelle nicht angegeben
-- Status: aktuell, zeitliche Gültigkeit offen
+- Zuletzt geändert: 2026-08-05
+- Eintragstyp: Wissensnotiz
+- Status: aktuell

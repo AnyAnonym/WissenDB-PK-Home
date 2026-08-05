@@ -1,10 +1,25 @@
 # Raspberry-Pi-Roboter
 
+## Metadaten
+
+- Erstellt: 2026-08-03
+- Zuletzt geändert: 2026-08-05
+- Eintragstyp: Projekt
+
+## Zielprofil
+
+- Gegenstand oder System: kleiner programmierbarer Roboter
+- Produkt oder Variante: Eigenbau auf Basis eines Raspberry Pi 4 Model B
+- Architektur oder Plattform: Raspberry Pi 4 Model B, Raspberry Pi OS Lite, Python für Hardware-I/O
+- Zielgerät oder Zielgruppe: eigener Lern- und Entwicklungsroboter; spätere Zusammenarbeit mit einem Freund
+- Einsatzumgebung oder Verfahren: schrittweiser Aufbau mit GPIO, Webanwendung, Tailscale, Bluetooth und ergänzbarer Sensorik beziehungsweise Aktorik
+- Geltungsbereich: Planung, Aufbau, Programmierung und Dokumentation des konkreten Roboters
+- Ausdrückliche Ausschlüsse: private Tailnet-Adressen, Kontokennungen und Namen anderer Geräte
+
 ## Überblick
 
 - Status: In Arbeit
 - Begonnen: 2026-07-11
-- Zuletzt geändert: 2026-08-05
 - Zieltermin: noch offen
 - Nächster Schritt: Nächste gewünschte Roboterfunktion festlegen und die dafür benötigte Hardware planen
 - Zusammenarbeit: Ein Freund wird zu einem späteren Zeitpunkt dazustoßen

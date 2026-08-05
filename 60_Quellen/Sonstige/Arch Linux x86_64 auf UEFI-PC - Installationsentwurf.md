@@ -4,6 +4,18 @@
 
 - Erstellt: 2026-08-05
 - Zuletzt geändert: 2026-08-05
+- Eintragstyp: Quelle
+- Themenbereich: Technik / Betriebssysteme / Arch Linux
+
+## Zielprofil
+
+- Gegenstand oder System: Entwurf einer Arch-Linux-Installation
+- Produkt oder Variante: normales Arch Linux für x86_64
+- Architektur oder Plattform: x86_64-PC mit UEFI-Firmware, GPT und GRUB für `x86_64-efi`
+- Zielgerät oder Zielgruppe: normaler PC mit UEFI-Bootmenü
+- Einsatzumgebung oder Verfahren: Start eines offiziellen Arch-Linux-ISO und manuelle Installation mit `pacstrap`
+- Geltungsbereich: quellenbezogene Beschreibung und Korrektur des x86_64-Installationsentwurfs
+- Ausdrückliche Ausschlüsse: Raspberry Pi, ARM/AArch64 und PC-fremde Bootverfahren
 
 ## Angaben
 

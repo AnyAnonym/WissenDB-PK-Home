@@ -4,6 +4,18 @@
 
 - Erstellt: 2026-08-05
 - Zuletzt geändert: 2026-08-05
+- Eintragstyp: Quelle
+- Themenbereich: Technik / Betriebssysteme / Arch Linux ARM
+
+## Zielprofil
+
+- Gegenstand oder System: Entwurf einer Arch-Linux-ARM-Installation
+- Produkt oder Variante: Arch Linux ARM für Raspberry Pi 4 in AArch64
+- Architektur oder Plattform: ARM64/AArch64, Raspberry-Pi-Bootablauf und MBR-partitionierte microSD-Karte
+- Zielgerät oder Zielgruppe: Raspberry Pi 4 Model B
+- Einsatzumgebung oder Verfahren: microSD-Karte auf einem laufenden Linux-Rechner vorbereiten und ein ARM-Root-Dateisystem entpacken
+- Geltungsbereich: quellenbezogene Beschreibung und Korrektur des Raspberry-Pi-4-Installationsentwurfs
+- Ausdrückliche Ausschlüsse: normales Arch Linux x86_64, PC-Bootmenü, UEFI-PC-Installation, `pacstrap` und GRUB
 
 ## Angaben
 

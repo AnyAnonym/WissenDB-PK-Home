@@ -73,6 +73,7 @@ dieser kompakten Orientierung.
 - `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` →
   `80_Workflows/sicherheit-auflisten.md`
 - `Prüfe die Wissensdatenbank` → `80_Workflows/wissensdatenbank-pruefen.md`
+- `Commit` → `80_Workflows/commit.md`
 
 Eindeutig sinngleiche Formulierungen gelten ebenfalls. Das bloße Ablegen von
 Dateien startet keinen Workflow. Bei unklarer Zuordnung frage nach, bevor ein

@@ -3,8 +3,11 @@
 ## Metadaten
 
 - Kapitel: 3
+- Bereich: Lernen / Naturwissenschaften / Physik / Thermodynamik
 - Erstellt: 2026-08-04
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
+- Überprüft: 2026-08-04
+- Status: aktuell
 
 ## Kurzfassung
 
@@ -42,10 +45,3 @@ kein erforderlicher Bestandteil des dauerhaften Wissens.
 
 - OpenStax, [University Physics Volume 2 – Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/1-introduction), geprüft am 2026-08-04.
 - Schulischer Themenumfang: die unter „Herkunft und abgedeckter Umfang“ genannten Unterlagen, vollständig inhaltlich ausgewertet.
-
-## Metadaten
-
-- Bereich: Lernen / Naturwissenschaften / Physik / Thermodynamik
-- Erstellt: 2026-08-04
-- Überprüft: 2026-08-04
-- Status: aktuell

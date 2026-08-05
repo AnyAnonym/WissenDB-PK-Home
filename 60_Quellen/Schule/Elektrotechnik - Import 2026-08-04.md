@@ -4,8 +4,9 @@
 
 - Quellentyp: eigene Lernnotizen und Schulmaterial
 - Importkennung: `2026-08-04_094550`
+- Erstellt: 2026-08-04
 - Erfasst: 2026-08-04
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
 - Status: importiert
 
 ## Kurzbeschreibung

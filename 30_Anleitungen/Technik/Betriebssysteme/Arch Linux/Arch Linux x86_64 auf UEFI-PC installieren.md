@@ -4,6 +4,18 @@
 
 - Erstellt: 2026-08-05
 - Zuletzt geändert: 2026-08-05
+- Eintragstyp: Anleitung
+- Themenbereich: Technik / Betriebssysteme / Arch Linux
+
+## Zielprofil
+
+- Gegenstand oder System: Neuinstallation von Arch Linux
+- Produkt oder Variante: normales Arch Linux für x86_64
+- Architektur oder Plattform: x86_64-PC mit UEFI-Firmware, GPT und GRUB für `x86_64-efi`
+- Zielgerät oder Zielgruppe: PC mit UEFI-Bootmenü und eigenem Ziellaufwerk
+- Einsatzumgebung oder Verfahren: Start des offiziellen Arch-Linux-ISO von USB und manuelle Installation mit `pacstrap`
+- Geltungsbereich: einfache Neuinstallation mit EFI-Systempartition und ext4-Rootpartition
+- Ausdrückliche Ausschlüsse: Raspberry Pi, ARM/AArch64, BIOS-/Legacy-Start, Dual Boot, Secure Boot, Verschlüsselung, LVM und RAID
 
 ## Zweck
 
