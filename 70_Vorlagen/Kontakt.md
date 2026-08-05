@@ -1,5 +1,10 @@
 # Name
 
+## Metadaten
+
+- Erstellt: JJJJ-MM-TT
+- Zuletzt geändert: JJJJ-MM-TT
+
 ## Kontaktdaten
 
 - Organisation:
@@ -16,7 +21,3 @@ Woher kenne ich diese Person oder Organisation?
 
 Nur notwendige und angemessene Informationen festhalten. Keine Passwörter oder
 Zugangsdaten speichern.
-
-## Zuletzt geprüft
-
-JJJJ-MM-TT

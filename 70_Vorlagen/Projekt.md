@@ -1,5 +1,10 @@
 # Projektname
 
+## Metadaten
+
+- Erstellt: JJJJ-MM-TT
+- Zuletzt geändert: JJJJ-MM-TT
+
 ## Überblick
 
 - Status: Idee

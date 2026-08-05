@@ -1,5 +1,10 @@
 # Titel der Quelle
 
+## Metadaten
+
+- Erstellt: JJJJ-MM-TT
+- Zuletzt geändert: JJJJ-MM-TT
+
 ## Angaben
 
 - Typ: Buch / Internet / Schule / Sonstiges

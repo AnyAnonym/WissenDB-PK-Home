@@ -1,5 +1,10 @@
 # Titel der Anleitung
 
+## Metadaten
+
+- Erstellt: JJJJ-MM-TT
+- Zuletzt geändert: JJJJ-MM-TT
+
 ## Zweck
 
 Wofür wird diese Anleitung benötigt?
@@ -20,7 +25,3 @@ Wichtige Hinweise oder bekannte Probleme.
 ## Quellen
 
 - Keine
-
-## Zuletzt geprüft
-
-JJJJ-MM-TT
