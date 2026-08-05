@@ -8,7 +8,7 @@ Benutzer keine andere Sprache verlangt.
 ## Metadaten
 
 - Erstellt: 2026-08-03
-- Zuletzt geändert: 2026-08-04
+- Zuletzt geändert: 2026-08-05
 
 ## Vorgehen zu Beginn jeder Sitzung
 
@@ -56,13 +56,9 @@ muss die betroffene Arbeitsnotiz den Satz „Archiv nur im Notfall herangezogen�
 sowie Grund und Datum des Zugriffs enthalten. Ein bloß nützlicher Zusatz, eine
 bequemere Recherche oder eine unvollständige Wissensnotiz ist kein Notfall.
 
-Eine fest begrenzte Ausnahme ist der Workflow `Gib mir alle Quellen von
-<Thema>` aus `80_Workflows/quellen-anzeigen.md`. Dabei dürfen Importprotokolle
-durchsucht und archivierte Originaldateien als Quellen aufgelistet werden. Ihre
-Inhalte dürfen in diesem Workflow nicht als Wissensersatz ausgewertet werden.
-Diese Quellenauflistung ist kein Notfallzugriff und wird nicht als solcher
-dokumentiert. Sie ändert nichts daran, dass aktive Einträge ohne Archivzugriff
-vollständig verständlich und praktisch nutzbar sein müssen.
+Der Workflow `Zeige mir den Originaleintrag zu <Thema>` aus
+`80_Workflows/originaleintrag-anzeigen.md` greift ausschließlich auf aktive
+Einträge zu. Eingang und Archiv werden dabei weder durchsucht noch gelesen.
 
 KI-Assistenten dürfen die thematische Ordnerstruktur eigenständig festlegen und
 verbessern. Dazu gehört, für das betroffene Wissen Ordner und Dateien anzulegen,
@@ -83,13 +79,14 @@ ausgeführt:
 
 - `Wissen eintragen` → `80_Workflows/wissen-eintragen.md`
 - `Was weiß ich über <Thema>?` → `80_Workflows/wissen-abfragen.md`
-- `Gib mir alle Quellen von <Thema>` → `80_Workflows/quellen-anzeigen.md`
+- `Zeige mir den Originaleintrag zu <Thema>` →
+  `80_Workflows/originaleintrag-anzeigen.md`
 - `Prüfe die Wissensdatenbank` → `80_Workflows/wissensdatenbank-pruefen.md`
 
-Eindeutig sinngleiche Formulierungen gelten ebenfalls. Eine Quellenabfrage hat
-Vorrang vor einer allgemeinen Wissensabfrage. Das bloße Ablegen von Dateien löst
-keinen Workflow aus. Bei einer unklaren Zuordnung fragt der Assistent nach, bevor
-er einen schreibenden Workflow startet.
+Eindeutig sinngleiche Formulierungen gelten ebenfalls. Das bloße Ablegen von
+Dateien löst keinen Workflow aus. Bei einer unklaren Zuordnung fragt der
+Assistent nach, bevor er einen schreibenden Workflow startet. Beim Anzeigen
+eines Originaleintrags muss vor der Ausgabe genau eine aktive Datei feststehen.
 
 ## Verhalten beim Ablegen von Wissen
 

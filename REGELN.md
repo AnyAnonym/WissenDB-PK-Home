@@ -34,9 +34,9 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
    `90_Archiv/Importe/JJJJ-MM-TT_HHMMSS/Originale/` archiviert. Ihre relative
    Struktur aus dem Eingang bleibt erhalten.
 10. Das Archiv dient nur der unveränderten Aufbewahrung und nicht als Ersatz für
-    aktive Wissenseinträge. Der Workflow `Gib mir alle Quellen von <Thema>` darf
-    Importprotokolle durchsuchen und archivierte Originaldateien ausschließlich
-    als Quellen auflisten. Er wertet ihren Inhalt nicht als Wissensersatz aus.
+    aktive Wissenseinträge. Der Workflow `Zeige mir den Originaleintrag zu
+    <Thema>` verwendet ausschließlich aktive Einträge und greift weder auf den
+    Eingang noch auf das Archiv zu.
 11. Jeder Importlauf erhält unter seinem Zeitstempel eine Datei
     `IMPORTPROTOKOLL.md` mit ausführlichen Einzelbeschreibungen,
     Bearbeitungsstatus, Merge-Zielen, Konflikten und offenen Fragen. Das Protokoll
@@ -51,8 +51,7 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
 14. Ein sonstiger Zugriff auf einen abgeschlossenen Archivlauf ist nur auf
     ausdrücklichen Benutzerwunsch oder zur Wiederherstellung verlorenen
     beziehungsweise beschädigten Wissens erlaubt. Die betroffene Notiz muss dann
-    „Archiv nur im Notfall herangezogen“, Grund und Datum enthalten. Die reine
-    Quellenauflistung nach Regel 10 ist kein Notfallzugriff.
+    „Archiv nur im Notfall herangezogen“, Grund und Datum enthalten.
 15. Der KI-Assistent darf die thematische Ordnerstruktur eigenständig wählen und
     verbessern. Er darf dazu betroffene Ordner und Dateien anlegen, umbenennen,
     verschieben oder sinnvoll zusammenführen. Die Hierarchie und ihre Namen müssen
@@ -74,9 +73,14 @@ Diese Regeln gelten für Menschen sowie für Werkzeuge wie Codex und OpenCode.
     keines der beiden Daten.
 21. `Was weiß ich über <Thema>?` verwendet ausschließlich den aktiven lokalen
     Wissensbestand, weder Internet noch Eingang oder Archiv, und verändert nichts.
-22. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,
+22. `Zeige mir den Originaleintrag zu <Thema>` gibt den vollständigen,
+    unveränderten Inhalt genau einer eindeutig bestimmten aktiven Datei aus und
+    nennt darunter als letzte Zeile ihren vollständigen lokalen Pfad. Bei mehreren
+    möglichen Dateien muss der Benutzer zuerst auswählen. Der Workflow verwendet
+    weder Internet noch Eingang oder Archiv und verändert nichts.
+23. `Prüfe die Wissensdatenbank` kontrolliert Struktur, Metadaten, Links,
     Dubletten und sensible Angaben nach
     `80_Workflows/wissensdatenbank-pruefen.md` und ist ohne zusätzlichen
     Änderungsauftrag rein lesend.
-23. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
+24. Änderungen sollen nachvollziehbar, quellenbezogen und in verständlichem
     Deutsch sein.

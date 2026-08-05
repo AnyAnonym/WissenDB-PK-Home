@@ -28,8 +28,9 @@ Wissensbestand allein durch die Prüfung zu verändern.
 ## Archivgrenze
 
 Bei dieser allgemeinen Prüfung werden abgeschlossene Archivläufe weder gelesen
-noch fachlich durchsucht. Die ausdrücklich erlaubte Archivsuche bleibt dem
-Workflow `Gib mir alle Quellen von <Thema>` vorbehalten.
+noch fachlich durchsucht. Ein Zugriff darauf ist nur nach den in `AGENTS.md` und
+`REGELN.md` festgelegten Notfallregeln oder auf ausdrücklichen Benutzerwunsch
+zulässig.
 
 ## Ergebnis
 

@@ -66,6 +66,5 @@ Originale erhalten.
 ## Archivprinzip
 
 Archivierte Originale bleiben unverändert. Aktive Einträge müssen ohne sie
-vollständig verständlich sein. Der spätere Workflow `Quellen anzeigen` darf die
-Originale als Quellen auflisten; diese Möglichkeit ist kein Grund, aktive
-Einträge kürzer oder unvollständiger zu verfassen.
+vollständig verständlich sein. Reguläre Lese-Workflows verwenden ausschließlich
+den aktiven Wissensbestand und greifen nicht auf archivierte Originale zurück.

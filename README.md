@@ -9,7 +9,7 @@ Codex, OpenCode und anderen KI-Assistenten.
 |---|---|
 | `Wissen eintragen` | Verarbeitet die Dateien aus `00_Eingang`, übernimmt ihr Wissen und archiviert erfolgreiche Originale. |
 | `Was weiß ich über <Thema>?` | Antwortet ausschließlich mit dem aktiven lokalen Wissensbestand. |
-| `Gib mir alle Quellen von <Thema>` | Listet aktive Quellenangaben und die zugehörigen archivierten Originaldateien auf. |
+| `Zeige mir den Originaleintrag zu <Thema>` | Gibt eine aktive Datei vollständig und unverändert aus und nennt darunter ihren Pfad. |
 | `Prüfe die Wissensdatenbank` | Prüft Struktur, Metadaten, Links, Dubletten und sensible Angaben. |
 
 Die vollständigen und verbindlichen Abläufe stehen in
@@ -23,8 +23,8 @@ Die vollständigen und verbindlichen Abläufe stehen in
   Archivzugriff vollständig verständlich.
 - Erfolgreich verarbeitete Originaldateien werden unverändert und mit
   Importprotokoll archiviert.
-- Archivdateien ersetzen niemals eine vollständige Wissensbeschreibung. Nur der
-  Quellenworkflow darf sie als Quellen aufführen.
+- Archivdateien ersetzen niemals eine vollständige Wissensbeschreibung und
+  werden von regulären Lese-Workflows nicht verwendet.
 - Widersprüche, offene Fragen und zeitabhängige Angaben werden sichtbar
   dokumentiert.
 - Neue oder inhaltlich geänderte Wissenseinträge führen das Feld
