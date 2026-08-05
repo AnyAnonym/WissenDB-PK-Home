@@ -3,8 +3,8 @@
 ## Überblick
 
 - Status: In Arbeit
-- Begonnen: unbekannt
-- Zuletzt geändert: 2026-08-04
+- Begonnen: 2026-07-11
+- Zuletzt geändert: 2026-08-05
 - Zieltermin: noch offen
 - Nächster Schritt: Nächste gewünschte Roboterfunktion festlegen und die dafür benötigte Hardware planen
 - Zusammenarbeit: Ein Freund wird zu einem späteren Zeitpunkt dazustoßen
@@ -50,4 +50,3 @@ Projekt gemeinsam mit einem Freund weiterentwickelt werden.
 - [ ] Nächste gewünschte Roboterfunktion festlegen
 - [ ] Benötigte Sensoren, Aktoren und weitere Bauteile planen
 - [ ] Aufgaben für die spätere Zusammenarbeit mit dem Freund abstimmen
-

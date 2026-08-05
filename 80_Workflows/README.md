@@ -13,7 +13,7 @@ Anfragen starten den jeweiligen Workflow.
 | `Zeige mir den Originaleintrag zu <Thema>` | [originaleintrag-anzeigen.md](originaleintrag-anzeigen.md) | Eine aktive Datei vollständig und unverändert ausgeben und darunter ihren Pfad nennen |
 | `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` | [sicherheit-auflisten.md](sicherheit-auflisten.md) | Ausschließlich Datei- und Ordnernamen im Sicherheitsbereich auflisten |
 | `Prüfe die Wissensdatenbank` | [wissensdatenbank-pruefen.md](wissensdatenbank-pruefen.md) | Struktur, Metadaten, Links, Dubletten und sensible Angaben prüfen |
-| `Committe die Änderungen` | [commit.md](commit.md) | Ausschließlich geprüfte, ausdrücklich gewählte Dateien lokal committen |
+| `Commit` | [commit.md](commit.md) | Alle von Git sichtbaren Änderungen lokal committen; nur eine ausdrückliche Einschränkung begrenzt den Umfang |
 
 ## Abgrenzung
 
@@ -38,4 +38,5 @@ Neue Befehle werden erst nach Bestätigung des Benutzers in diese verbindliche
 - [Werkzeuge/originaleintrag-anzeigen.ps1](Werkzeuge/originaleintrag-anzeigen.ps1)
   sucht aktive Einträge und erzeugt die unveränderte, ausgabefertige Darstellung.
 - [Werkzeuge/git-commit.ps1](Werkzeuge/git-commit.ps1) übernimmt das sichere
-  Vormerken, Prüfen und lokale Committen einer expliziten Dateiliste.
+  Vormerken, Prüfen und lokale Committen aller Änderungen oder einer ausdrücklich
+  eingeschränkten Dateiliste.

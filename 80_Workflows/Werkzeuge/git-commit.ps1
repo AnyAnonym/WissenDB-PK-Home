@@ -1,14 +1,21 @@
 #requires -Version 7.0
 
-[CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Medium')]
+[CmdletBinding(
+    DefaultParameterSetName = 'Alles',
+    SupportsShouldProcess,
+    ConfirmImpact = 'Medium'
+)]
 param(
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]
     [string] $Nachricht,
 
-    [Parameter(Mandatory)]
+    [Parameter(Mandatory, ParameterSetName = 'Dateien')]
     [ValidateNotNullOrEmpty()]
-    [string[]] $Dateien
+    [string[]] $Dateien,
+
+    [Parameter(Mandatory, ParameterSetName = 'Alles')]
+    [switch] $Alles
 )
 
 Set-StrictMode -Version Latest
@@ -94,26 +101,49 @@ try {
         throw 'Das Skript wurde nicht im erwarteten Repository ausgeführt.'
     }
 
-    $requestedPaths = @(
-        foreach ($inputFile in $Dateien) {
-            Get-RelativeRepositoryPath -InputPath $inputFile
+    $allMode = $PSCmdlet.ParameterSetName -eq 'Alles'
+    if ($allMode) {
+        & git check-ignore --no-index -q -- 'Sicherheit/__schutzpruefung__'
+        if ($LASTEXITCODE -ne 0) {
+            throw 'Der Sicherheitsbereich ist nicht zuverlässig von Git ausgeschlossen.'
         }
-    ) | Sort-Object -Unique
 
-    $alreadyStaged = @(
-        Invoke-Git -Argumente @(
-            '-c', 'core.quotepath=false',
-            'diff', '--cached', '--name-only', '--'
-        ) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
-    )
-    $foreignStaged = @(
-        $alreadyStaged | Where-Object { $_ -notin $requestedPaths }
-    )
-    if ($foreignStaged.Count -gt 0) {
-        throw "Bereits vorgemerkte fremde Dateien:`n$($foreignStaged -join "`n")"
+        $trackedSecurityFiles = @(
+            Invoke-Git -Argumente @(
+                '-c', 'core.quotepath=false',
+                'ls-files', '--', 'Sicherheit', 'Sicherheit/**'
+            ) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+        )
+        if ($trackedSecurityFiles.Count -gt 0) {
+            throw 'Der Sicherheitsbereich enthält bereits von Git verfolgte Namen.'
+        }
+
+        $requestedPaths = @()
+        $target = 'alle von Git sichtbaren Änderungen im Repository'
+    }
+    else {
+        $requestedPaths = @(
+            foreach ($inputFile in $Dateien) {
+                Get-RelativeRepositoryPath -InputPath $inputFile
+            }
+        ) | Sort-Object -Unique
+
+        $alreadyStaged = @(
+            Invoke-Git -Argumente @(
+                '-c', 'core.quotepath=false',
+                'diff', '--cached', '--name-only', '--'
+            ) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+        )
+        $foreignStaged = @(
+            $alreadyStaged | Where-Object { $_ -notin $requestedPaths }
+        )
+        if ($foreignStaged.Count -gt 0) {
+            throw "Bereits vorgemerkte fremde Dateien:`n$($foreignStaged -join "`n")"
+        }
+
+        $target = $requestedPaths -join ', '
     }
 
-    $target = $requestedPaths -join ', '
     if (-not $PSCmdlet.ShouldProcess(
         $target,
         "Dateien vormerken und Commit '$Nachricht' erstellen"
@@ -122,7 +152,12 @@ try {
         exit 0
     }
 
-    $addArguments = @('add', '--') + $requestedPaths
+    $addArguments = if ($allMode) {
+        @('add', '-A', '--', '.')
+    }
+    else {
+        @('add', '--') + $requestedPaths
+    }
     $null = Invoke-Git -Argumente $addArguments
 
     $stagedPaths = @(
@@ -135,11 +170,13 @@ try {
         throw 'Für die angegebenen Dateien gibt es nichts zu committen.'
     }
 
-    $unexpectedStaged = @(
-        $stagedPaths | Where-Object { $_ -notin $requestedPaths }
-    )
-    if ($unexpectedStaged.Count -gt 0) {
-        throw "Unerwartet vorgemerkte Dateien erkannt:`n$($unexpectedStaged -join "`n")"
+    if (-not $allMode) {
+        $unexpectedStaged = @(
+            $stagedPaths | Where-Object { $_ -notin $requestedPaths }
+        )
+        if ($unexpectedStaged.Count -gt 0) {
+            throw "Unerwartet vorgemerkte Dateien erkannt:`n$($unexpectedStaged -join "`n")"
+        }
     }
 
     $null = Invoke-Git -Argumente @('diff', '--cached', '--check')
