@@ -8,7 +8,7 @@ Anfragen starten den jeweiligen Workflow.
 
 | Benutzerbefehl | Workflow | Wirkung |
 |---|---|---|
-| `Wissen eintragen` | [wissen-eintragen.md](wissen-eintragen.md) | Quelldateien anhand von Zielprofilen vollständig verarbeiten, Unstimmigkeiten dokumentieren und erfolgreiche Originale archivieren |
+| `Wissen eintragen` | [wissen-eintragen.md](wissen-eintragen.md) | Eingangs- oder ausdrücklich benannte externe Quelldateien anhand von Zielprofilen vollständig verarbeiten; erfolgreiche Eingangsoriginale archivieren und externe Originale unverändert am bestehenden Ort belassen |
 | `Was weiß ich über <Thema>?` | [wissen-abfragen.md](wissen-abfragen.md) | Ausschließlich den aktiven lokalen Wissensbestand zum Thema zusammenfassen |
 | `Zeige mir den Originaleintrag zu <Thema>` | [originaleintrag-anzeigen.md](originaleintrag-anzeigen.md) | Eine aktive Datei vollständig und unverändert ausgeben und darunter ihren Pfad nennen |
 | `Zeige mir alle Schlüssel oder Sicherheitssachen in der Datenbank an` | [sicherheit-auflisten.md](sicherheit-auflisten.md) | Ausschließlich Datei- und Ordnernamen im Sicherheitsbereich auflisten |
