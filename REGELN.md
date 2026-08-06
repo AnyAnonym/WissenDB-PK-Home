@@ -2,7 +2,7 @@
 
 ## Metadaten
 
-- Zuletzt geändert: 2026-08-05
+- Zuletzt geändert: 2026-08-06
 
 ## Geltung und Prioritäten
 
@@ -85,6 +85,33 @@
   Aktualisiere interne Verweise, vermeide unnötige Hierarchietiefe und lasse
   sachfremde Bereiche unangetastet. Löschen und Überschreiben erfordern einen
   ausdrücklichen Auftrag.
+- Rechnerspezifische Pfade, Programmeinstellungen und lokale Zugriffswege werden
+  immer mit dem Namen des zugehörigen Geräts dokumentiert und nicht ungeprüft auf
+  andere Rechner übertragen. Die derzeit dokumentierten lokalen Angaben gelten
+  für **Lap21 von Kilian**; weitere Geräte erhalten eigene Zuordnungen.
+
+## OneDrive-Zugriff
+
+- Vor jedem Zugriff auf einen OneDrive-Ordner ist
+  [80_Workflows/Werkzeuge/onedrive-zugang.md](80_Workflows/Werkzeuge/onedrive-zugang.md)
+  vollständig zu lesen und zu beachten. Die dokumentierten lokalen Pfade gelten
+  für **Lap21 von Kilian**.
+- Folgende OneDrive-Ordner sind unabhängig von ihrer Hierarchieebene gesperrt:
+  Ordner, deren Name mit `Microsoft` beginnt, Ordner mit `TANZ` im Namen sowie
+  die Ordner `Aufnahmen`, `Besprechungen` und `Programming - Minecraft`.
+- Ein gesperrter Ordner darf ausschließlich anhand seines Namens im
+  übergeordneten Verzeichnis als gesperrt erkannt werden. Er darf nicht betreten,
+  geöffnet, aufgelistet, durchsucht, als Vorschau angesehen oder anderweitig
+  untersucht werden. Inhalte und weitere Metadaten daraus dürfen nicht erhoben
+  oder verwendet werden.
+- OneDrive-Ordner namens `Sicherheit` und ihre Unterordner sind ebenfalls eine
+  Blackbox. Bei mysteriösen oder potenziell sicherheitsrelevanten OneDrive-Dateien
+  darf nur der Dateiname gelesen und für eine vom Benutzer erlaubte Zuordnung
+  verwendet werden; der Inhalt bleibt ungeöffnet und unverändert.
+- OneDrive-Dateien und -Ordner werden nur auf einen ausdrücklichen, zum konkreten
+  Schreibvorgang passenden Auftrag erstellt, verändert, verschoben, umbenannt,
+  kopiert, hochgeladen oder gelöscht. Namenskollisionen werden nicht durch
+  Überschreiben oder eigenmächtiges Umbenennen gelöst.
 
 ## Sicherheitsbereich
 
