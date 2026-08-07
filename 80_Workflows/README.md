@@ -38,6 +38,10 @@ Neue Befehle werden erst nach Bestätigung des Benutzers in diese verbindliche
 - [Werkzeuge/onedrive-zugang.md](Werkzeuge/onedrive-zugang.md) regelt den Zugriff
   auf die OneDrive-Stämme `Kilian – Linzer Technikum` und `Kilian – Pimminger`,
   einschließlich gesperrter Ordner und der erforderlichen Schreibfreigaben.
+- [Werkzeuge/pimminger-dev-zugang.md](Werkzeuge/pimminger-dev-zugang.md) regelt
+  den streng abgegrenzten, normalerweise lesenden Zugriff auf
+  `PiPA2KTStorage - Dev`; Eltern- und Nachbarordner sind vollständig
+  ausgeschlossen.
 - [Werkzeuge/originaleintrag-anzeigen.ps1](Werkzeuge/originaleintrag-anzeigen.ps1)
   sucht aktive Einträge und erzeugt die unveränderte, ausgabefertige Darstellung.
 - [Werkzeuge/git-commit.ps1](Werkzeuge/git-commit.ps1) übernimmt das sichere

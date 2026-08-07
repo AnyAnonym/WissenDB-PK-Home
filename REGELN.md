@@ -2,7 +2,7 @@
 
 ## Metadaten
 
-- Zuletzt geändert: 2026-08-06
+- Zuletzt geändert: 2026-08-07
 
 ## Geltung und Prioritäten
 
@@ -125,6 +125,20 @@
   wird nachgefragt, nicht überschrieben oder umbenannt.
 - Sicherheitsdateien werden nicht in Git, Archiv, aktive Einträge,
   Importprotokolle oder Klärungsdateien übernommen.
+
+## Pimminger-Dev-Zugriff
+
+- Vor jedem Zugriff auf den Pimminger-Entwicklungsbestand ist
+  [80_Workflows/Werkzeuge/pimminger-dev-zugang.md](80_Workflows/Werkzeuge/pimminger-dev-zugang.md)
+  vollständig zu lesen und zu beachten.
+- Auf **Lap21 von Kilian** beginnt die einzige erlaubte Quellwurzel exakt bei
+  `C:\Users\PK\Pimminger\PiPA2KTStorage - Dev`. Der Elternordner
+  `C:\Users\PK\Pimminger` und alle Nachbarordner dürfen nicht aufgelistet,
+  durchsucht, geöffnet oder anderweitig untersucht werden.
+- Der Zugriff ist normalerweise ausschließlich lesend. Ohne ausdrücklichen,
+  konkreten Auftrag werden aus dem Entwicklungsbestand weder Inhalte verändert
+  noch Programme, Skripte, Builds, Tests, Installationen, Datenbankzugriffe oder
+  Netzwerkverbindungen ausgeführt.
 
 ## Workflows und Qualität
 
